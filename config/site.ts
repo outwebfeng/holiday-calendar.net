@@ -6,7 +6,7 @@ export type Locale = (typeof locales)[number];
 export const siteConfig = {
   name: 'Holiday Calendar',
   description: 'Your Ultimate US Holiday Guide',
-  email: 'support@holidaycalendar.com',
+  email: 'support@holidaycalendar.net',
   links: {
     github: 'https://github.com/xxx/holidaycalendar',
     twitter: 'https://twitter.com/holidaycalendar',

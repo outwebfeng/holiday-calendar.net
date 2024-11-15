@@ -1,9 +1,13 @@
 {
   "navigation": {
+    "title": "Holiday Calendar",
+    "logoAlt": "Holiday Calendar Logo",
     "home": "Home",
     "holidays": "Holidays",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "github": "GitHub Repository",
+    "githubUrl": "https://github.com/outwebfeng/holiday-calendar.net"
   },
   "holidays": {
     "search": "Search holidays...",
@@ -99,5 +103,8 @@
     "terms": "Terms of Service",
     "contact": "Contact Us",
     "copyright": "© 2024 Holiday Calendar. All rights reserved."
+  },
+  "site": {
+    "name": "Holiday Calendar1"
   }
 }

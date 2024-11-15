@@ -1,9 +1,13 @@
 {
   "navigation": {
+    "title": "节日日历",
+    "logoAlt": "节日日历图标",
     "home": "首页",
     "holidays": "节假日",
     "about": "关于我们",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "github": "GitHub仓库",
+    "githubUrl": "https://github.com/outwebfeng/holiday-calendar.net"
   },
   "holidays": {
     "search": "搜索节假日...",
@@ -99,5 +103,8 @@
     "terms": "服务条款",
     "contact": "联系我们",
     "copyright": "© 2024 Holiday Calendar. 保留所有权利。"
+  },
+  "site": {
+    "name": "节日日历"
   }
 }

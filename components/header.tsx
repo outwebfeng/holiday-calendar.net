@@ -1,11 +1,10 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import { Calendar, Languages, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { siteConfig } from '@/config/site';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -18,8 +17,12 @@ export function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
       <nav className="container mx-auto px-4 h-16 flex items-center">
         <Link href={`/${locale}`} className="flex items-center space-x-2">
-          <Calendar className="h-6 w-6" />
-          <span className="font-bold text-xl">Holiday Calendar</span>
+          <img 
+            src="/favicon.ico"
+            alt={t('navigation.logoAlt')}
+            className="h-6 w-6"
+          />
+          <span className="font-bold text-xl">{t('navigation.title')}</span>
         </Link>
 
         {/* Center Navigation */}
@@ -40,22 +43,13 @@ export function Header() {
 
         {/* Right Side Icons */}
         <div className="flex items-center space-x-2">
-          <ThemeToggle />
-          <Button
-            variant="ghost"
-            size="icon"
-            asChild
-            className="hover:text-primary"
-          >
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Button variant="ghost" size="icon" asChild>
+            <a href={t('navigation.githubUrl')} target="_blank" rel="noreferrer">
               <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
-            </Link>
+              <span className="sr-only">{t('navigation.github')}</span>
+            </a>
           </Button>
+          <ThemeToggle />
           <LanguageSwitcher />
         </div>
       </nav>
