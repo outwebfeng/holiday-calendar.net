@@ -75,36 +75,60 @@
   },
   "testimonials": {
     "title": "What Our Users Say",
-    "testimonial1": {
-      "text": "Holiday Calendar has transformed how I plan and celebrate holidays. It's an invaluable resource!",
-      "author": "Sarah Johnson",
-      "role": "Event Planner"
-    },
-    "testimonial2": {
-      "text": "As someone new to the US, this website helps me understand and participate in American holidays.",
-      "author": "Michael Chen",
-      "role": "International Student"
-    },
-    "testimonial3": {
-      "text": "The countdown feature keeps my family excited and prepared for upcoming celebrations.",
-      "author": "Emily Rodriguez",
-      "role": "Parent"
-    }
+    "items": [
+      {
+        "text": "Holiday Calendar has transformed how I plan and celebrate holidays. It's an invaluable resource!",
+        "author": "Sarah Johnson",
+        "role": "Event Planner"
+      },
+      {
+        "text": "As someone new to the US, this website helps me understand and participate in American holidays.",
+        "author": "Michael Chen",
+        "role": "International Student"
+      },
+      {
+        "text": "The countdown feature keeps my family excited and prepared for upcoming celebrations.",
+        "author": "Emily Rodriguez",
+        "role": "Parent"
+      }
+    ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "question1": {
-      "q": "Are all US holidays included?",
-      "a": "Yes, we cover all federal holidays and major cultural celebrations in the United States."
-    },
-    "question2": {
-      "q": "How accurate are the countdowns?",
-      "a": "Our countdowns are synchronized with atomic time servers for precise accuracy."
-    },
-    "question3": {
-      "q": "Can I get notifications for upcoming holidays?",
-      "a": "Yes, you can set custom reminders for any holiday in our calendar."
-    }
+    "items": [
+      {
+        "q": "What are the main features of the website?",
+        "a": "Holiday Calendar provides information on all U.S. holidays, including holiday countdowns, origins, guides, celebration suggestions, and taboos."
+      },
+      {
+        "q": "How are the holiday countdowns on the homepage organized?",
+        "a": "The homepage displays countdowns for the next three upcoming holidays, helping users quickly see what's coming next."
+      },
+      {
+        "q": "How can I view the full list of holidays?",
+        "a": "You can access the complete holiday list from the homepage, where holidays are arranged chronologically. Clicking on any holiday will take you to its detailed page."
+      },
+      {
+        "q": "What information is included on the holiday detail pages?",
+        "a": "Each holiday detail page includes a countdown, the holiday's origin, guides, celebration ideas, and relevant taboos."
+      },
+      {
+        "q": "Are the sources of holiday information reliable?",
+        "a": "Yes, all holiday information is based on authoritative sources and historical records to ensure accuracy and reliability."
+      },
+      {
+        "q": "Does the website include both federal and state holidays?",
+        "a": "Yes, we provide information on federal holidays as well as unique holidays observed in specific states."
+      },
+      {
+        "q": "Why are there taboos for some holidays?",
+        "a": "Certain holidays are tied to specific cultural or religious traditions, which may include unique practices and taboos. These are explained in detail on the holiday pages."
+      },
+      {
+        "q": "Is the website mobile-friendly?",
+        "a": "Yes, our website is optimized for mobile devices, so you can access it seamlessly from your phone or tablet."
+      }
+    ]
   },
   "footer": {
     "about": "About Us",

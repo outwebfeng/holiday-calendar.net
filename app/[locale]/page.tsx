@@ -11,6 +11,24 @@ import { Countdown } from '@/components/countdown';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Holiday, getHolidays } from '@/lib/get-holidays';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+// 添加 interface 定义
+interface Testimonial {
+  text: string;
+  author: string;
+  role: string;
+}
+
+interface FAQItem {
+  q: string;
+  a: string;
+}
 
 export default function Home() {
   const t = useTranslations();
@@ -107,6 +125,49 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2">{t('features.feature3.title')}</h3>
                 <p className="text-muted-foreground">{t('features.feature3.description')}</p>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 bg-muted">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4">{t('testimonials.title')}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              {t.raw('testimonials.items').map((testimonial: Testimonial, index: number) => (
+                <Card key={`testimonial-${index}`} className="p-6 flex flex-col">
+                  <div className="flex-1">
+                    <p className="text-muted-foreground mb-6 italic">
+                      "{testimonial.text}"
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <p className="font-semibold">{testimonial.author}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">{t('faq.title')}</h2>
+            <div className="max-w-5xl mx-auto">
+              <Accordion type="single" collapsible className="w-full">
+                {t.raw('faq.items').map((item: FAQItem, index: number) => (
+                  <AccordionItem key={`faq-${index}`} value={`item-${index}`}>
+                    <AccordionTrigger className="text-left text-lg font-semibold">
+                      {item.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {item.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </section>

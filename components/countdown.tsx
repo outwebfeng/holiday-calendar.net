@@ -55,7 +55,7 @@ export function Countdown({ targetDate, title, size = 'default' }: CountdownProp
     <Card className={`${containerClass} backdrop-blur-sm bg-background/95`}>
       {title && (
         <div className="flex justify-between items-baseline mb-6">
-          <h2 className={titleClass}>{title}</h2>
+          <h3 className={titleClass}>{title}</h3>
           <span className="text-muted-foreground text-sm shrink-0 ml-4">
             {getTargetDate().toLocaleDateString(
               locale === 'zh' ? 'zh-CN' : 'en-US',
