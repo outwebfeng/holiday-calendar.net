@@ -22,7 +22,6 @@ export function Header() {
             alt={t('navigation.logoAlt')}
             className="h-6 w-6"
           />
-          <span className="font-bold text-xl">{t('navigation.title')}</span>
         </Link>
 
         {/* Center Navigation */}

@@ -1,6 +1,9 @@
 {
+  "Home": {
+    "title": "Holidays in US - Countdown, Source, Event Ceremony, Taboos",
+    "description": "Holidays Calendarin US - Your Ultimate US Holiday Guide, Keep you informed about all holidays, don't miss any holidays, and make every holiday meaningful."
+  },
   "navigation": {
-    "title": "Holiday Calendar",
     "logoAlt": "Holiday Calendar Logo",
     "home": "Home",
     "holidays": "Holidays",
@@ -103,8 +106,5 @@
     "terms": "Terms of Service",
     "contact": "Contact Us",
     "copyright": "© 2024 Holiday Calendar. All rights reserved."
-  },
-  "site": {
-    "name": "Holiday Calendar1"
   }
 }
