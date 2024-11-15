@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Globe, Heart } from 'lucide-react';
+import { Clock, Globe, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -73,7 +73,9 @@ export default function Home() {
         {/* Countdown Section */}
         <section className="py-16 bg-muted">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Upcoming Holidays</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">
+              {t('countdown.title')}
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {upcomingHolidays.map(holiday => (
                 <Link key={holiday.id} href={`/${locale}/${holiday.id}`}>

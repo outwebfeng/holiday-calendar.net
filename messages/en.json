@@ -34,7 +34,13 @@
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds",
-    "until": "until"
+    "until": "until",
+    "title": "Upcoming Holidays",
+    "dateFormat": {
+      "year": "numeric",
+      "month": "long",
+      "day": "numeric"
+    }
   },
   "features": {
     "title": "Why Choose Holiday Calendar",

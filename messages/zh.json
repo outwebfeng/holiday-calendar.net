@@ -34,7 +34,13 @@
     "hours": "小时",
     "minutes": "分钟",
     "seconds": "秒",
-    "until": "距离"
+    "until": "距离",
+    "title": "即将到来的节日",
+    "dateFormat": {
+      "year": "numeric",
+      "month": "long",
+      "day": "numeric"
+    }
   },
   "features": {
     "title": "为什么选择Holiday Calendar",

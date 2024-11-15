@@ -1,24 +1,29 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Card } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
 interface CountdownProps {
-  targetDate: string;
-  title?: string;
+  targetDate: string | Date;
+  title: string;
   size?: 'default' | 'large';
 }
 
 export function Countdown({ targetDate, title, size = 'default' }: CountdownProps) {
   const t = useTranslations();
+  const locale = useLocale();
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  const getTargetDate = () => {
+    return typeof targetDate === 'string' ? new Date(targetDate) : targetDate;
+  };
 
   useEffect(() => {
     const updateCountdown = () => {
       const now = new Date();
-      const target = new Date(targetDate);
+      const target = getTargetDate();
       const diff = target.getTime() - now.getTime();
 
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -48,7 +53,21 @@ export function Countdown({ targetDate, title, size = 'default' }: CountdownProp
 
   return (
     <Card className={`${containerClass} backdrop-blur-sm bg-background/95`}>
-      {title && <h2 className={titleClass}>{title}</h2>}
+      {title && (
+        <div className="flex justify-between items-baseline mb-6">
+          <h2 className={titleClass}>{title}</h2>
+          <span className="text-muted-foreground text-sm shrink-0 ml-4">
+            {getTargetDate().toLocaleDateString(
+              locale === 'zh' ? 'zh-CN' : 'en-US',
+              {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              }
+            )}
+          </span>
+        </div>
+      )}
       <div className="grid grid-cols-4 gap-4 md:gap-6">
         {[
           { value: countdown.days, label: t('countdown.days') },

@@ -26,6 +26,15 @@
       "origin": "Christmas celebrates the birth of Jesus Christ in Bethlehem. The modern Christmas tradition combines Christian customs with ancient winter solstice celebrations and various cultural practices.",
       "guide": "Celebrations include decorating Christmas trees, exchanging gifts, attending church services, sharing meals with family and friends, and waiting for Santa Claus.",
       "taboos": "- Don't forget to be inclusive of different beliefs\n- Avoid excessive commercialization\n- Be mindful of those who might be alone during holidays"
+    },
+    {
+      "id": "christmas-2024",
+      "name": "Christmas Day",
+      "date": "2024-12-25",
+      "description": "Christmas is both a sacred religious holiday and a worldwide cultural and commercial phenomenon.",
+      "origin": "Christmas celebrates the birth of Jesus Christ in Bethlehem. The modern Christmas tradition combines Christian customs with ancient winter solstice celebrations and various cultural practices.",
+      "guide": "Celebrations include decorating Christmas trees, exchanging gifts, attending church services, sharing meals with family and friends, and waiting for Santa Claus.",
+      "taboos": "- Don't forget to be inclusive of different beliefs\n- Avoid excessive commercialization\n- Be mindful of those who might be alone during holidays"
     }
   ]
 }
