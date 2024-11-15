@@ -5,12 +5,24 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import LocaleProvider from '@/components/locale-provider';
 import '../globals.css';
+import { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
+
+export const generateMetadata = ({ params }: { params: { locale: string } }): Metadata => {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const canonicalUrl = `${baseUrl}/${params.locale}`;
+  
+  return {
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+};
 
 export default async function LocaleLayout({
   children,
