@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "Home",
+    "holidays": "Holidays",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "holidays": {
+    "search": "Search holidays...",
+    "sortBy": {
+      "date": "Sort by Date",
+      "name": "Sort by Name"
+    },
+    "noResults": "No holidays found matching your search.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "hero": {
+    "title": "Your Ultimate US Holiday Guide",
+    "subtitle": "Never miss a holiday celebration with our comprehensive calendar and countdown",
+    "cta": "Explore Holidays"
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "until": "until"
+  },
+  "features": {
+    "title": "Why Choose Holiday Calendar",
+    "subtitle": "Discover what makes us your perfect holiday companion",
+    "feature1": {
+      "title": "Accurate Countdowns",
+      "description": "Stay on top of every holiday with precise countdowns to the second"
+    },
+    "feature2": {
+      "title": "Cultural Insights",
+      "description": "Deep dive into the history and significance of each holiday"
+    },
+    "feature3": {
+      "title": "Celebration Guides",
+      "description": "Get expert tips and ideas for meaningful holiday celebrations"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Browse Holidays",
+      "description": "Explore our comprehensive list of US holidays"
+    },
+    "step2": {
+      "title": "Set Reminders",
+      "description": "Never miss important dates with customizable notifications"
+    },
+    "step3": {
+      "title": "Plan Celebrations",
+      "description": "Access guides and tips for perfect holiday planning"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "testimonial1": {
+      "text": "Holiday Calendar has transformed how I plan and celebrate holidays. It's an invaluable resource!",
+      "author": "Sarah Johnson",
+      "role": "Event Planner"
+    },
+    "testimonial2": {
+      "text": "As someone new to the US, this website helps me understand and participate in American holidays.",
+      "author": "Michael Chen",
+      "role": "International Student"
+    },
+    "testimonial3": {
+      "text": "The countdown feature keeps my family excited and prepared for upcoming celebrations.",
+      "author": "Emily Rodriguez",
+      "role": "Parent"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "question1": {
+      "q": "Are all US holidays included?",
+      "a": "Yes, we cover all federal holidays and major cultural celebrations in the United States."
+    },
+    "question2": {
+      "q": "How accurate are the countdowns?",
+      "a": "Our countdowns are synchronized with atomic time servers for precise accuracy."
+    },
+    "question3": {
+      "q": "Can I get notifications for upcoming holidays?",
+      "a": "Yes, you can set custom reminders for any holiday in our calendar."
+    }
+  },
+  "footer": {
+    "about": "About Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "copyright": "© 2024 Holiday Calendar. All rights reserved."
+  }
+}

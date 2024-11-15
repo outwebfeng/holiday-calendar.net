@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "首页",
+    "holidays": "节假日",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "holidays": {
+    "search": "搜索节假日...",
+    "sortBy": {
+      "date": "按日期排序",
+      "name": "按名称排序"
+    },
+    "noResults": "未找到匹配的节假日。",
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页"
+    }
+  },
+  "hero": {
+    "title": "您的终极美国节假日指南",
+    "subtitle": "通过我们全面的日历和倒计时，不错过任何节日庆祝",
+    "cta": "探索节假日"
+  },
+  "countdown": {
+    "days": "天",
+    "hours": "小时",
+    "minutes": "分钟",
+    "seconds": "秒",
+    "until": "距离"
+  },
+  "features": {
+    "title": "为什么选择Holiday Calendar",
+    "subtitle": "发现是什么让我们成为您完美的节日伴侣",
+    "feature1": {
+      "title": "精确倒计时",
+      "description": "通过精确到秒的倒计时掌握每个节日"
+    },
+    "feature2": {
+      "title": "文化洞察",
+      "description": "深入了解每个节日的历史和意义"
+    },
+    "feature3": {
+      "title": "庆祝指南",
+      "description": "获取专业的建议和有意义的节日庆祝创意"
+    }
+  },
+  "howItWorks": {
+    "title": "使用方法",
+    "step1": {
+      "title": "浏览节假日",
+      "description": "探索我们全面的美国节假日列表"
+    },
+    "step2": {
+      "title": "设置提醒",
+      "description": "通过自定义通知不错过重要日期"
+    },
+    "step3": {
+      "title": "规划庆祝活动",
+      "description": "获取完美节日规划的指南和建议"
+    }
+  },
+  "testimonials": {
+    "title": "用户评价",
+    "testimonial1": {
+      "text": "Holiday Calendar改变了我规划和庆祝节日的方式。这是一个无价的资源！",
+      "author": "Sarah Johnson",
+      "role": "活动策划师"
+    },
+    "testimonial2": {
+      "text": "作为一个刚来美国的人，这个网站帮助我理解和参与美国节日。",
+      "author": "Michael Chen",
+      "role": "留学生"
+    },
+    "testimonial3": {
+      "text": "倒计时功能让我的家人对即将到来的庆祝活动保持兴奋和准备。",
+      "author": "Emily Rodriguez",
+      "role": "家长"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "question1": {
+      "q": "是否包含所有美国节假日？",
+      "a": "是的，我们涵盖了美国所有的联邦节假日和主要文化庆祝活动。"
+    },
+    "question2": {
+      "q": "倒计时准确吗？",
+      "a": "我们的倒计时与原子时钟服务器同步，确保精确性。"
+    },
+    "question3": {
+      "q": "我可以获取即将到来的节日通知吗？",
+      "a": "是的，您可以为日历中的任何节日设置自定义提醒。"
+    }
+  },
+  "footer": {
+    "about": "关于我们",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们",
+    "copyright": "© 2024 Holiday Calendar. 保留所有权利。"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "holidays": [
+    {
+      "id": "independence-day-2024",
+      "name": {
+        "en": "Independence Day",
+        "zh": "独立日"
+      },
+      "date": "2024-07-04",
+      "description": {
+        "en": "Independence Day commemorates the adoption of the Declaration of Independence on July 4, 1776.",
+        "zh": "独立日纪念1776年7月4日《独立宣言》的通过。"
+      },
+      "origin": {
+        "en": "The Fourth of July celebrates the passage of the Declaration of Independence by the Continental Congress in 1776. This historic document declared the 13 American colonies' independence from Great Britain.",
+        "zh": "7月4日庆祝1776年大陆会议通过《独立宣言》。这份具有历史意义的文件宣布13个美洲殖民地脱离英国独立。"
+      },
+      "guide": {
+        "en": "Traditional celebrations include fireworks displays, parades, barbecues, carnivals, picnics, and various other public and private events celebrating American independence and history.",
+        "zh": "传统庆祝活动包括烟花表演、游行、烧烤、嘉年华、野餐以及各种庆祝美国独立和历史的公共和私人活动。"
+      },
+      "taboos": {
+        "en": "- Avoid improper display of the American flag\n- Don't use illegal fireworks\n- Be mindful of veterans with PTSD during fireworks",
+        "zh": "- 避免不当展示美国国旗\n- 不要使用非法烟花\n- 在放烟花时要注意患有PTSD的退伍军人"
+      }
+    },
+    {
+      "id": "thanksgiving-2024",
+      "name": {
+        "en": "Thanksgiving Day",
+        "zh": "感恩节"
+      },
+      "date": "2024-11-28",
+      "description": {
+        "en": "Thanksgiving is a national holiday celebrating the harvest and other blessings of the past year.",
+        "zh": "感恩节是庆祝丰收和过去一年祝福的全国性节日。"
+      },
+      "origin": {
+        "en": "The modern Thanksgiving holiday tradition traces its origins to a 1621 celebration by Pilgrims after their first harvest in the New World. The event lasted three days and was attended by 90 Native Americans and 53 Pilgrims.",
+        "zh": "现代感恩节传统可以追溯到1621年朝圣者在新大陆第一次收获后的庆祝活动。活动持续了三天，90名美洲原住民和53名朝圣者参加了活动。"
+      },
+      "guide": {
+        "en": "Traditional celebrations include family gatherings, turkey dinner, watching football games, and expressing gratitude. Many also participate in volunteering at local food banks or shelters.",
+        "zh": "传统庆祝活动包括家庭聚会、火鸡晚餐、观看橄榄球比赛和表达感激之情。许多人也参与在当地食品银行或收容所的志愿服务。"
+      },
+      "taboos": {
+        "en": "- Don't discuss controversial topics at family gatherings\n- Avoid shopping during family time\n- Remember to be inclusive of all cultural perspectives",
+        "zh": "- 不要在家庭聚会时讨论有争议的话题\n- 避免在家庭时间购物\n- 记住要包容所有文化观点"
+      }
+    },
+    {
+      "id": "christmas-2024",
+      "name": {
+        "en": "Christmas Day",
+        "zh": "圣诞节"
+      },
+      "date": "2024-12-25",
+      "description": {
+        "en": "Christmas is both a sacred religious holiday and a worldwide cultural and commercial phenomenon.",
+        "zh": "圣诞节既是神圣的宗教节日，也是世界性的文化和商业现象。"
+      },
+      "origin": {
+        "en": "Christmas celebrates the birth of Jesus Christ in Bethlehem. The modern Christmas tradition combines Christian customs with ancient winter solstice celebrations and various cultural practices.",
+        "zh": "圣诞节庆祝耶稣基督在伯利恒的诞生。现代圣诞节传统将基督教习俗与古代冬至庆祝活动和各种文化习俗相结合。"
+      },
+      "guide": {
+        "en": "Celebrations include decorating Christmas trees, exchanging gifts, attending church services, sharing meals with family and friends, and waiting for Santa Claus.",
+        "zh": "庆祝活动包括装饰圣诞树、交换礼物、参加教堂礼拜、与家人和朋友共享美食，以及等待圣诞老人。"
+      },
+      "taboos": {
+        "en": "- Don't forget to be inclusive of different beliefs\n- Avoid excessive commercialization\n- Be mindful of those who might be alone during holidays",
+        "zh": "- 不要忘记包容不同的信仰\n- 避免过度商业化\n- 要关注那些可能在节日期间独处的人"
+      }
+    }
+  ]
+}
