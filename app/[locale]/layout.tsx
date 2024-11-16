@@ -2,8 +2,9 @@ import { Inter } from 'next/font/google';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Header from '@/components/header';
-import Footer from '@/components/Footer';
+import Footer from '@/components/footer';
 import '../globals.css';
+import { getTranslations } from 'next-intl/server';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,9 +17,18 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }) {
+  const t = await getTranslations({ locale, namespace: 'Home' });
+  
+  const canonicalPath = locale === 'en' 
+    ? process.env.NEXT_PUBLIC_SITE_URL 
+    : `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`;
+  
   return {
-    title: 'Holiday Calendar - US Holiday Countdown',
-    description: 'Track and celebrate American holidays with accurate countdowns, historical information, and celebration guides.',
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: canonicalPath
+    }
   };
 }
 
