@@ -39,8 +39,11 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = useMessages();
+  if (locale !== 'en' && locale !== 'zh') {
+    notFound();
+  }
 
+  const messages = useMessages();
   if (!messages) notFound();
 
   return (
