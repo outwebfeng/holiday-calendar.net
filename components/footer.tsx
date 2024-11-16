@@ -1,71 +1,68 @@
 "use client";
 
-import { useTranslations } from 'next-intl';
-import { Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { holidays } from '@/data/holidays.json';
-import Link from 'next/link';
+import { useTranslations } from "next-intl";
+import { Mail } from "lucide-react";
 
-export function Footer() {
-  const t = useTranslations();
+export default function Footer() {
+  const t = useTranslations("footer");
 
   return (
-    <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <Link href="/en" className="flex items-center space-x-2 mb-4">
-              <Calendar className="h-6 w-6" />
-              <span className="font-bold text-xl">Holiday Calendar</span>
-            </Link>
-            <p className="text-sm text-muted-foreground">support@holidaycalendar.com</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">{t('navigation.about')}</h3>
-            <ul className="space-y-2">
-              <li>
-                <Button variant="link" className="p-0 h-auto" asChild>
-                  <Link href="/en/about">{t('footer.about')}</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="p-0 h-auto" asChild>
-                  <Link href="/en/privacy">{t('footer.privacy')}</Link>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="p-0 h-auto" asChild>
-                  <Link href="/en/terms">{t('footer.terms')}</Link>
-                </Button>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">{t('navigation.holidays')}</h3>
-            <ul className="space-y-2">
-              {holidays.slice(0, 3).map(holiday => (
-                <li key={holiday.id}>
-                  <Button variant="link" className="p-0 h-auto" asChild>
-                    <Link href={`/en/${holiday.id}`}>{holiday.name.en}</Link>
-                  </Button>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">{t('navigation.contact')}</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Have questions? We'd love to hear from you.
+          <div className="col-span-1 md:col-span-2">
+            <h3 className="text-lg font-semibold mb-4">Holiday Calendar</h3>
+            <p className="text-gray-600 mb-4">
+              Your comprehensive guide to American holidays and celebrations.
             </p>
-            <Button asChild>
-              <Link href="/en/contact">{t('navigation.contact')}</Link>
-            </Button>
+            <div className="flex items-center space-x-2 text-gray-600">
+              <Mail className="h-5 w-5" />
+              <span>{t("email")}</span>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-sm font-semibold mb-4 text-gray-900">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/about" className="text-gray-600 hover:text-gray-900">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/holidays" className="text-gray-600 hover:text-gray-900">
+                  Holidays
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-600 hover:text-gray-900">
+                  {t("contact")}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold mb-4 text-gray-900">Legal</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/privacy" className="text-gray-600 hover:text-gray-900">
+                  {t("privacy")}
+                </a>
+              </li>
+              <li>
+                <a href="/terms" className="text-gray-600 hover:text-gray-900">
+                  {t("terms")}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <Separator className="my-8" />
-        <div className="text-center text-sm text-muted-foreground">
-          {t('footer.copyright')}
+        
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <p className="text-center text-gray-500">
+            © {new Date().getFullYear()} Holiday Calendar. {t("rights")}
+          </p>
         </div>
       </div>
     </footer>

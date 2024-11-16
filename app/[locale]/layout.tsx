@@ -1,61 +1,48 @@
 import { Inter } from 'next/font/google';
-import { unstable_setRequestLocale } from 'next-intl/server';
-import { locales } from '@/config/site';
-import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/toaster";
-import LocaleProvider from '@/components/locale-provider';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { notFound } from 'next/navigation';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import '../globals.css';
-import { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: 'en' }, { locale: 'zh' }];
 }
 
-export const generateMetadata = ({ params }: { params: { locale: string } }): Metadata => {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const canonicalUrl = `${baseUrl}/${params.locale}`;
-  
+export async function generateMetadata({
+  params: { locale }
+}: {
+  params: { locale: string };
+}) {
   return {
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    title: 'Holiday Calendar - US Holiday Countdown',
+    description: 'Track and celebrate American holidays with accurate countdowns, historical information, and celebration guides.',
   };
-};
+}
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params: { locale }
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  unstable_setRequestLocale(locale);
+  const messages = useMessages();
 
-  let messages;
-  try {
-    messages = (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {
-    return null;
-  }
+  if (!messages) notFound();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <LocaleProvider locale={locale} messages={messages}>
-            <div className="min-h-screen bg-background flex flex-col antialiased">
-              {children}
-            </div>
-          </LocaleProvider>
-          <Toaster />
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

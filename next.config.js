@@ -1,14 +1,16 @@
-const createNextIntlPlugin = require('next-intl/plugin');
- 
-const withNextIntl = createNextIntlPlugin();
- 
+const withNextIntl = require('next-intl/plugin')();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
+  images: { unoptimized: true }
 };
- 
-module.exports = withNextIntl(nextConfig);
+
+module.exports = withNextIntl({
+  ...nextConfig,
+  // This is the default, but feel free to override if needed
+  defaultLocale: 'en',
+  locales: ['en', 'zh']
+});
