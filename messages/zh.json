@@ -64,9 +64,13 @@
     }
   },
   "footer": {
+    "title": "美国节假日日历",
+    "description": "美国节假日的全面指南",
+    "quickLinks": "快速链接",
+    "legal": "法律",
     "contact": "联系我们",
     "email": "support@holidaycalendar.net",
-    "rights": "版权所有",
+    "rights": "© 2024 Holiday Calendar. 版权所有",
     "privacy": "隐私政策",
     "terms": "服务条款"
   }

@@ -64,9 +64,13 @@
     }
   },
   "footer": {
+    "title": "Holiday Calendar",
+    "description": "Your comprehensive guide to American holidays and celebrations.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
     "contact": "Contact Us",
     "email": "support@holidaycalendar.net",
-    "rights": "All rights reserved",
+    "rights": "© 2024 Holiday Calendar. All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   }
