@@ -19,29 +19,33 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">
-              {t("home")}
-            </Link>
-            <Link href="/holidays" className="text-gray-700 hover:text-gray-900">
-              {t("holidays")}
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900">
-              {t("about")}
-            </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-gray-900">
-              {t("contact")}
-            </Link>
-            <div className="flex items-center space-x-4">
-              <Link href="/en" locale="en" className="text-gray-700">
-                EN
+          {/* Desktop Navigation - Updated */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <Link href="/" className="text-gray-700 hover:text-gray-900">
+                {t("home")}
               </Link>
-              <span className="text-gray-300">|</span>
-              <Link href="/zh" locale="zh" className="text-gray-700">
-                中文
+              <Link href="/holidays" className="text-gray-700 hover:text-gray-900">
+                {t("holidays")}
+              </Link>
+              <Link href="/about" className="text-gray-700 hover:text-gray-900">
+                {t("about")}
+              </Link>
+              <Link href="/contact" className="text-gray-700 hover:text-gray-900">
+                {t("contact")}
               </Link>
             </div>
+          </div>
+
+          {/* Language Switcher - Moved to separate div */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Link href="/en" locale="en" className="text-gray-700">
+              EN
+            </Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/zh" locale="zh" className="text-gray-700">
+              中文
+            </Link>
           </div>
 
           {/* Mobile menu button */}
