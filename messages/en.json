@@ -105,5 +105,17 @@
     "rights": "© 2024 Holiday Calendar. All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "holidays": {
+    "search": "Search holidays...",
+    "sortBy": {
+      "date": "Sort by Date",
+      "name": "Sort by Name"
+    },
+    "noResults": "No holidays found matching your search.",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
   }
 }

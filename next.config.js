@@ -6,9 +6,5 @@ const nextConfig = withNextIntl({
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  experimental: {
-    appDir: true,
-  },
 });
-
 module.exports = nextConfig;

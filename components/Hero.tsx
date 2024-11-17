@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { AnimatedElement } from "@/components/calendar/animated-element";
+import { AnimatedElement } from "@/components/ui/animated-element";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
