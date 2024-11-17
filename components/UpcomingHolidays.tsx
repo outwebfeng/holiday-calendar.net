@@ -3,13 +3,6 @@ import Link from "next/link";
 import holidaysData from "@/data/holidays.json";
 import { ClientCountdown } from "./ClientCountdown";
 
-interface Holiday {
-  id: string;
-  name: string;
-  date: string;
-  description: string;
-}
-
 export default async function UpcomingHolidays() {
   const t = await getTranslations("countdown");
   
