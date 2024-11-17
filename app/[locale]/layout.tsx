@@ -5,17 +5,18 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import '../globals.css';
 import { getTranslations } from 'next-intl/server';
+import { LANGUAGES, type LanguageCode } from '@/i18n';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'zh' }];
+  return LANGUAGES.map(lang => ({ locale: lang.code }));
 }
 
 export async function generateMetadata({
   params: { locale }
 }: {
-  params: { locale: string };
+  params: { locale: LanguageCode };
 }) {
   const t = await getTranslations({ locale, namespace: 'Home' });
   
@@ -37,9 +38,9 @@ export default function LocaleLayout({
   params: { locale }
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: LanguageCode };
 }) {
-  if (locale !== 'en' && locale !== 'zh') {
+  if (!LANGUAGES.map(l => l.code).includes(locale)) {
     notFound();
   }
 
@@ -47,7 +48,7 @@ export default function LocaleLayout({
   if (!messages) notFound();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="flex flex-col min-h-screen">
@@ -60,3 +61,6 @@ export default function LocaleLayout({
     </html>
   );
 }
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
