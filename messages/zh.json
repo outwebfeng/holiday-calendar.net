@@ -14,6 +14,14 @@
     "subtitle": "通过我们全面的日历和倒计时，不错过任何节日庆祝",
     "cta": "探索节假日"
   },
+  "countdown": {
+    "title": "节日倒计时",
+    "days": "天",
+    "hours": "小时",
+    "minutes": "分钟",
+    "seconds": "秒",
+    "suffix": "倒计时"
+  },
   "features": {
     "title": "为什么选择Holiday Calendar",
     "countdown": {

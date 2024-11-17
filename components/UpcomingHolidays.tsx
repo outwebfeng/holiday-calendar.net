@@ -1,50 +1,43 @@
-import { differenceInDays, parseISO } from "date-fns";
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import holidaysData from "@/data/holidays.json";
+import { ClientCountdown } from "./ClientCountdown";
 
 interface Holiday {
   id: string;
   name: string;
   date: string;
   description: string;
-  daysUntil?: number;
 }
 
 export default async function UpcomingHolidays() {
+  const t = await getTranslations("countdown");
+  
+  // 获取未来的节日(最多3个)
   const today = new Date();
   const upcomingHolidays = holidaysData.holidays
-    .map((holiday) => ({
-      ...holiday,
-      daysUntil: differenceInDays(parseISO(holiday.date), today),
-    }))
-    .filter((holiday) => holiday.daysUntil >= 0)
-    .sort((a, b) => a.daysUntil! - b.daysUntil!)
+    .filter(holiday => new Date(holiday.date) >= today)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
     .slice(0, 3);
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-muted">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Upcoming Holidays
+          {t("title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {upcomingHolidays.map((holiday) => (
-            <div
-              key={holiday.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105"
+          {upcomingHolidays.map(holiday => (
+            <Link 
+              key={holiday.id} 
+              href={`/${holiday.id}`}
+              className="block transition-transform hover:scale-105"
             >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{holiday.name}</h3>
-                <p className="text-gray-600 mb-4">{holiday.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-blue-600 font-medium">
-                    {new Date(holiday.date).toLocaleDateString()}
-                  </span>
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-                    {holiday.daysUntil} days left
-                  </span>
-                </div>
-              </div>
-            </div>
+              <ClientCountdown 
+                targetDate={holiday.date} 
+                title={holiday.name} 
+              />
+            </Link>
           ))}
         </div>
       </div>

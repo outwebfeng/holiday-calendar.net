@@ -14,6 +14,14 @@
     "subtitle": "Never miss a holiday celebration with our comprehensive calendar and countdown",
     "cta": "Explore Holidays"
   },
+  "countdown": {
+    "title": "Holiday Countdown",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "suffix": "Countdown"
+  },
   "features": {
     "title": "Why Choose Holiday Calendar",
     "countdown": {
