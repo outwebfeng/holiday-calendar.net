@@ -10,7 +10,4 @@ const nextConfig = {
 
 module.exports = withNextIntl({
   ...nextConfig,
-  // This is the default, but feel free to override if needed
-  defaultLocale: 'en',
-  locales: ['en', 'zh']
 });
