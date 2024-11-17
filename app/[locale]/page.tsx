@@ -7,11 +7,12 @@ import UpcomingHolidays from "@/components/UpcomingHolidays";
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
+      {/* <Hero /> 
       <UpcomingHolidays />
+      */}
       <Features />
-      {/* 
       <Testimonials />
+      {/* 
       <FAQ /> */}
     </>
   );

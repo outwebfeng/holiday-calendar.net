@@ -43,15 +43,18 @@
     "items": {
       "1": {
         "text": "This site has become my go-to resource for planning holiday celebrations!",
-        "author": "Sarah Johnson"
+        "author": "Sarah Johnson",
+        "role": "Event Planner"
       },
       "2": {
         "text": "The countdown feature helps me stay organized and never miss important dates.",
-        "author": "Michael Chen"
+        "author": "Michael Chen",
+        "role": "Business Owner"
       },
       "3": {
         "text": "Incredibly helpful for learning about American holiday traditions.",
-        "author": "Emma Thompson"
+        "author": "Emma Thompson",
+        "role": "International Student"
       }
     }
   },
