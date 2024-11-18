@@ -9,6 +9,20 @@
     "about": "About",
     "contact": "Contact"
   },
+  "holidays": {
+    "pageTitle": "Holiday Calendar",
+    "search": "Search holidays...",
+    "noResults": "No holidays found",
+    "sortBy": {
+      "placeholder": "Sort by",
+      "date": "Date",
+      "name": "Name"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
   "hero": {
     "title": "Your Ultimate US Holiday Guide",
     "subtitle": "Never miss a holiday celebration with our comprehensive calendar and countdown",
@@ -102,20 +116,8 @@
     "legal": "Legal",
     "contact": "Contact Us",
     "email": "support@holidaycalendar.net",
-    "rights": "© 2024 Holiday Calendar. All rights reserved",
+    "rights": " 2024 Holiday Calendar. All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
-  },
-  "holidays": {
-    "search": "Search holidays...",
-    "sortBy": {
-      "date": "Sort by Date",
-      "name": "Sort by Name"
-    },
-    "noResults": "No holidays found matching your search.",
-    "pagination": {
-      "previous": "Previous",
-      "next": "Next"
-    }
   }
 }

@@ -52,7 +52,7 @@
         "role": "企业主"
       },
       "3": {
-        "text": "对了解美国节日传统非常有帮助。",
+        "text": "对于了解美国节日传统非常有帮助。",
         "author": "艾玛·汤普森",
         "role": "留学生"
       }
@@ -102,17 +102,19 @@
     "legal": "法律",
     "contact": "联系我们",
     "email": "support@holidaycalendar.net",
-    "rights": "© 2024 Holiday Calendar. 版权所有",
+    "rights": " 2024 Holiday Calendar. ",
     "privacy": "隐私政策",
     "terms": "服务条款"
   },
   "holidays": {
+    "pageTitle": "节假日日历",
     "search": "搜索节假日...",
     "sortBy": {
-      "date": "按日期排序",
-      "name": "按名称排序"
+      "placeholder": "排序方式",
+      "date": "日期",
+      "name": "名称"
     },
-    "noResults": "未找到匹配的节假日。",
+    "noResults": "未找到节假日",
     "pagination": {
       "previous": "上一页",
       "next": "下一页"

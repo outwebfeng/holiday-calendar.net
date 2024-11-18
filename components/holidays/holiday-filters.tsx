@@ -10,7 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
 
 interface HolidayFiltersProps {
   searchTerm: string;
@@ -26,11 +25,21 @@ export function HolidayFilters({
   onSortChange
 }: HolidayFiltersProps) {
   const t = useTranslations();
-  const locale = useLocale();
 
   return (
-    <div className="flex items-center gap-4 w-full md:w-auto">
-      <div className="relative flex-1 md:w-64">
+    <div className="flex items-center space-x-3">
+      <Select value={sortBy} onValueChange={onSortChange}>
+        <SelectTrigger className="w-[130px]">
+          <Filter className="h-4 w-4 mr-2" />
+          <SelectValue placeholder={t('holidays.sortBy.placeholder')} />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="date">{t('holidays.sortBy.date')}</SelectItem>
+          <SelectItem value="name">{t('holidays.sortBy.name')}</SelectItem>
+        </SelectContent>
+      </Select>
+
+      <div className="relative w-[200px]">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
         <Input
           placeholder={t('holidays.search')}
@@ -39,16 +48,6 @@ export function HolidayFilters({
           className="pl-9"
         />
       </div>
-      <Select value={sortBy} onValueChange={onSortChange}>
-        <SelectTrigger className="w-[140px]">
-          <Filter className="h-4 w-4 mr-2" />
-          <SelectValue placeholder="Sort by" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="date">{t('holidays.sortBy.date')}</SelectItem>
-          <SelectItem value="name">{t('holidays.sortBy.name')}</SelectItem>
-        </SelectContent>
-      </Select>
     </div>
   );
 }
