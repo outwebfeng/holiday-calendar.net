@@ -1,0 +1,14 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://holidaycalendar.net/sitemap.xml
+
+# Disallow crawling of error pages
+Disallow: /404
+Disallow: /500
+
+# Allow crawling of all localized content
+Allow: /en/*
+Allow: /zh/*
