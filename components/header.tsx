@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { Menu } from "@headlessui/react";
 import { ChevronDown, Globe, Menu as MenuIcon } from "lucide-react";
 import { useState } from "react";
@@ -20,32 +19,53 @@ export default function Header() {
     return currentLanguage?.label || 'Language';
   };
 
+  // 构建语言切换URL
+  const getLanguageSwitchUrl = (targetLang: string) => {
+    const currentPath = window.location.pathname;
+    console.log('Current Path:', currentPath);
+    console.log('Current Locale:', currentLocale);
+    
+    // 处理直接访问非本地化路径的情况
+    if (!currentPath.startsWith('/' + currentLocale)) {
+      const pathWithoutLeadingSlash = currentPath.replace(/^\//, '');
+      console.log('Non-localized path detected, constructing URL:', `/${targetLang}/${pathWithoutLeadingSlash}`);
+      return `/${targetLang}/${pathWithoutLeadingSlash}`;
+    }
+
+    const pathAfterLocale = currentPath.substring(currentLocale.length + 1);
+    console.log('Path after locale:', pathAfterLocale);
+    
+    const newUrl = `/${targetLang}${pathAfterLocale ? `/${pathAfterLocale}` : ''}`.replace(/\/+/g, '/');
+    console.log('Constructed URL:', newUrl);
+    return newUrl;
+  };
+
   return (
     <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-semibold">
+            <a href={`/${currentLocale}`} className="text-xl font-semibold">
               Holiday Calendar
-            </Link>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-center flex-1">
             <div className="flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-gray-900">
+              <a href={`/${currentLocale}`} className="text-gray-700 hover:text-gray-900">
                 {t("home")}
-              </Link>
-              <Link href="/holidays" className="text-gray-700 hover:text-gray-900">
+              </a>
+              <a href={`/${currentLocale}/holidays`} className="text-gray-700 hover:text-gray-900">
                 {t("holidays")}
-              </Link>
-              <Link href="/about" className="text-gray-700 hover:text-gray-900">
+              </a>
+              <a href={`/${currentLocale}/about`} className="text-gray-700 hover:text-gray-900">
                 {t("about")}
-              </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-gray-900">
+              </a>
+              <a href={`/${currentLocale}/contact`} className="text-gray-700 hover:text-gray-900">
                 {t("contact")}
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -63,9 +83,8 @@ export default function Header() {
                   {LANGUAGES.map((lang) => (
                     <Menu.Item key={lang.code}>
                       {({ active }) => (
-                        <Link
-                          href={lang.href}
-                          locale={lang.code}
+                        <a
+                          href={getLanguageSwitchUrl(lang.code)}
                           className={`${
                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
                           } flex px-4 py-2 text-sm ${
@@ -73,7 +92,7 @@ export default function Header() {
                           }`}
                         >
                           {lang.label}
-                        </Link>
+                        </a>
                       )}
                     </Menu.Item>
                   ))}
@@ -97,47 +116,45 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="pt-2 pb-3 space-y-1">
-              <Link
-                href="/"
+              <a
+                href={`/${currentLocale}`}
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
                 {t("home")}
-              </Link>
-              <Link
-                href="/holidays"
+              </a>
+              <a
+                href={`/${currentLocale}/holidays`}
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
                 {t("holidays")}
-              </Link>
-              <Link
-                href="/about"
+              </a>
+              <a
+                href={`/${currentLocale}/about`}
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
                 {t("about")}
-              </Link>
-              <Link
-                href="/contact"
+              </a>
+              <a
+                href={`/${currentLocale}/contact`}
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
                 {t("contact")}
-              </Link>
-              
+              </a>
               {/* Mobile Language Menu */}
               <div className="px-3 py-2">
                 <div className="text-sm font-medium text-gray-500 mb-2">
                   {getCurrentLanguageLabel()}
                 </div>
                 {LANGUAGES.map((lang) => (
-                  <Link
+                  <a
                     key={lang.code}
-                    href={lang.href}
-                    locale={lang.code}
+                    href={getLanguageSwitchUrl(lang.code)}
                     className={`block px-2 py-1 text-gray-700 hover:bg-gray-100 rounded-md ${
-                      currentLocale === lang.code ? 'font-semibold bg-gray-50' : ''
+                      currentLocale === lang.code ? 'font-semibold' : ''
                     }`}
                   >
                     {lang.label}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

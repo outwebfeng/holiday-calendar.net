@@ -1,9 +1,10 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Mail } from "lucide-react";
 
 export default async function Footer() {
   const footerT = await getTranslations("footer");
   const navT = await getTranslations("navigation");
+  const locale = await getLocale();
 
   return (
     <footer className="bg-gray-50">
@@ -24,17 +25,17 @@ export default async function Footer() {
             <h2 className="text-sm font-semibold mb-4 text-gray-900">{footerT("quickLinks")}</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-gray-600 hover:text-gray-900">
+                <a href={`/${locale}/about`} className="text-gray-600 hover:text-gray-900">
                   {navT("about")}
                 </a>
               </li>
               <li>
-                <a href="/holidays" className="text-gray-600 hover:text-gray-900">
+                <a href={`/${locale}/holidays`} className="text-gray-600 hover:text-gray-900">
                   {navT("holidays")}
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-600 hover:text-gray-900">
+                <a href={`/${locale}/contact`} className="text-gray-600 hover:text-gray-900">
                   {navT("contact")}
                 </a>
               </li>
@@ -45,12 +46,12 @@ export default async function Footer() {
             <h2 className="text-sm font-semibold mb-4 text-gray-900">{footerT("legal")}</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy" className="text-gray-600 hover:text-gray-900">
+                <a href={`/${locale}/privacy`} className="text-gray-600 hover:text-gray-900">
                   {footerT("privacy")}
                 </a>
               </li>
               <li>
-                <a href="/terms" className="text-gray-600 hover:text-gray-900">
+                <a href={`/${locale}/terms`} className="text-gray-600 hover:text-gray-900">
                   {footerT("terms")}
                 </a>
               </li>

@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Link from 'next/link';
 import { Holiday } from '@/lib/get-holidays';
+import { LanguageCode } from '@/i18n';
 
 interface HolidayCardProps {
   holiday: Holiday;
-  locale: string;
+  locale: LanguageCode;
 }
 
 export function HolidayCard({ holiday, locale }: HolidayCardProps) {
@@ -17,7 +17,7 @@ export function HolidayCard({ holiday, locale }: HolidayCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <Link href={`/${locale}/holidays/${holiday.id}`}>
+      <a href={`/${locale}/holidays/${holiday.id}`}>
         <Card className="p-6 h-full hover:shadow-lg transition-shadow cursor-pointer">
           <div className="flex items-start justify-between mb-4">
             <h2 className="text-2xl font-semibold">{holiday.name}</h2>
@@ -33,7 +33,7 @@ export function HolidayCard({ holiday, locale }: HolidayCardProps) {
             {holiday.description}
           </p>
         </Card>
-      </Link>
+      </a>
     </motion.div>
   );
 }

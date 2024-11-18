@@ -1,9 +1,10 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Holiday, getHolidays } from '@/lib/get-holidays';
 import { HolidayList } from '@/components/holidays/holiday-list';
+import { LanguageCode } from '@/i18n';
 
 export default async function HolidaysPage() {
-  const locale = await getLocale() as 'en' | 'zh';
+  const locale = await getLocale() as LanguageCode;
   const t = await getTranslations();
   
   // Fetch holidays on the server

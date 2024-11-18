@@ -7,6 +7,7 @@ import { HolidayFilters } from './holiday-filters';
 import { Pagination } from './pagination';
 import { Holiday } from '@/lib/get-holidays';
 import { useTranslations } from 'next-intl';
+import { LanguageCode } from '@/i18n';
 
 const ITEMS_PER_PAGE = 9;
 
@@ -22,7 +23,7 @@ const container = {
 
 interface HolidayListProps {
   holidays: Holiday[];
-  locale: string;
+  locale: LanguageCode;
 }
 
 export function HolidayList({ holidays, locale }: HolidayListProps) {
