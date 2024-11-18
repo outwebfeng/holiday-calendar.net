@@ -1,7 +1,7 @@
 {
   "holidays": [
     {
-      "id": "independence-day-2024",
+      "id": "independence-day",
       "name": "独立日",
       "date": "2024-07-04",
       "description": "独立日纪念1776年7月4日《独立宣言》的通过。",
@@ -10,7 +10,7 @@
       "taboos": "- 避免不当展示美国国旗\n- 不要使用非法烟花\n- 在放烟花时要注意患有PTSD的退伍军人"
     },
     {
-      "id": "thanksgiving-2024",
+      "id": "thanksgiving",
       "name": "感恩节",
       "date": "2024-11-28",
       "description": "感恩节是庆祝丰收和过去一年祝福的全国性节日。",
@@ -19,7 +19,7 @@
       "taboos": "- 不要在家庭聚会时讨论有争议的话题\n- 避免在家庭时间购物\n- 记住要包容所有文化观点"
     },
     {
-      "id": "christmas-2024",
+      "id": "christmas",
       "name": "圣诞节",
       "date": "2024-12-25",
       "description": "圣诞节既是神圣的宗教节日，也是世界性的文化和商业现象。",

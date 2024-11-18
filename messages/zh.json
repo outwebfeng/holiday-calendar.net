@@ -119,5 +119,13 @@
       "previous": "上一页",
       "next": "下一页"
     }
+  },
+  "holiday": {
+    "countdown": "节日倒计时",
+    "date": "日期",
+    "description": "节日简介",
+    "origin": "节日起源",
+    "guide": "庆祝指南",
+    "taboos": "注意事项"
   }
 }

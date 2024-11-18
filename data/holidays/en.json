@@ -1,7 +1,7 @@
 {
   "holidays": [
     {
-      "id": "independence-day-2024",
+      "id": "independence-day",
       "name": "Independence Day",
       "date": "2024-07-04",
       "description": "Independence Day commemorates the adoption of the Declaration of Independence on July 4, 1776.",
@@ -10,7 +10,7 @@
       "taboos": "- Avoid improper display of the American flag\n- Don't use illegal fireworks\n- Be mindful of veterans with PTSD during fireworks"
     },
     {
-      "id": "thanksgiving-2024",
+      "id": "thanksgiving",
       "name": "Thanksgiving Day",
       "date": "2024-11-28",
       "description": "Thanksgiving is a national holiday celebrating the harvest and other blessings of the past year.",
@@ -19,7 +19,7 @@
       "taboos": "- Don't discuss controversial topics at family gatherings\n- Avoid shopping during family time\n- Remember to be inclusive of all cultural perspectives"
     },
     {
-      "id": "christmas-2024",
+      "id": "christmas",
       "name": "Christmas Day",
       "date": "2024-12-25",
       "description": "Christmas is both a sacred religious holiday and a worldwide cultural and commercial phenomenon.",

@@ -17,7 +17,7 @@ export function HolidayCard({ holiday, locale }: HolidayCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <Link href={`/${locale}/${holiday.id}`}>
+      <Link href={`/${locale}/holidays/${holiday.id}`}>
         <Card className="p-6 h-full hover:shadow-lg transition-shadow cursor-pointer">
           <div className="flex items-start justify-between mb-4">
             <h2 className="text-2xl font-semibold">{holiday.name}</h2>

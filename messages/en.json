@@ -109,6 +109,14 @@
       }
     ]
   },
+  "holiday": {
+    "countdown": "Holiday Countdown",
+    "date": "Date",
+    "description": "Description",
+    "origin": "Origin",
+    "guide": "Celebration Guide",
+    "taboos": "Things to Note"
+  },
   "footer": {
     "title": "Holiday Calendar",
     "description": "Your comprehensive guide to American holidays and celebrations.",

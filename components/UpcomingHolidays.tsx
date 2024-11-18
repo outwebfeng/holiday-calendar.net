@@ -1,14 +1,16 @@
-import { getTranslations } from "next-intl/server";
-import Link from "next/link";
-import holidaysData from "@/data/holidays.json";
+import { getTranslations, getLocale } from "next-intl/server";
+import { getHolidays } from "@/lib/get-holidays";
+import { LanguageCode } from "@/i18n";
 import { ClientCountdown } from "./ClientCountdown";
 
 export default async function UpcomingHolidays() {
   const t = await getTranslations("countdown");
+  const locale = (await getLocale()) as LanguageCode;
   
-  // 获取未来的节日(最多3个)
+  // Get upcoming holidays (max 3)
   const today = new Date();
-  const upcomingHolidays = holidaysData.holidays
+  const holidays = await getHolidays(locale);
+  const upcomingHolidays = holidays
     .filter(holiday => new Date(holiday.date) >= today)
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
     .slice(0, 3);
@@ -21,16 +23,16 @@ export default async function UpcomingHolidays() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {upcomingHolidays.map(holiday => (
-            <Link 
+            <a 
               key={holiday.id} 
-              href={`/${holiday.id}`}
+              href={`/${locale}/holidays/${holiday.id}`}
               className="block transition-transform hover:scale-105"
             >
               <ClientCountdown 
                 targetDate={holiday.date} 
                 title={holiday.name} 
               />
-            </Link>
+            </a>
           ))}
         </div>
       </div>
