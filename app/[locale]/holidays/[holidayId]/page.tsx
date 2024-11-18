@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { getHolidays } from '@/lib/get-holidays';
+import { getHolidayDetail } from '@/lib/get-holiday-detail';
 import { LanguageCode } from '@/i18n';
 import { ClientCountdown } from '@/components/ClientCountdown';
 import { Card } from '@/components/ui/card';
@@ -17,9 +17,8 @@ export default async function HolidayDetailPage({ params }: HolidayDetailPagePro
   const locale = params.locale as LanguageCode;
   const t = await getTranslations('holiday');
   
-  // Fetch holiday data
-  const holidays = await getHolidays(locale);
-  const holiday = holidays.find(h => h.id === params.holidayId);
+  // Fetch holiday detail data
+  const holiday = await getHolidayDetail(params.holidayId, locale);
   
   // If holiday not found, return 404
   if (!holiday) {

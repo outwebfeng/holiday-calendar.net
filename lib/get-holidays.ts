@@ -4,14 +4,13 @@ import { LanguageCode } from '@/i18n';
 export interface Holiday {
   id: string;
   name: string;
-  date: string | Date;
+  date: string;
+  dayOfWeek: string;
   description: string;
-  origin: string;
-  guide: string;
-  taboos: string;
 }
 
 export const getHolidays = cache(async (locale: LanguageCode): Promise<Holiday[]> => {
-  const data = await import(`@/data/holidays/${locale}.json`);
+  const currentYear = new Date().getFullYear();
+  const data = await import(`@/data/holidays-year/holiday-${currentYear}-${locale}.json`);
   return data.holidays;
 });

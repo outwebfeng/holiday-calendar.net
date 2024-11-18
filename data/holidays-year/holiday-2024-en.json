@@ -1,0 +1,32 @@
+{
+  "holidays": [
+    {
+      "id": "thanksgiving-day",
+      "name": "Thanksgiving Day",
+      "date": "2024-11-28",
+      "dayOfWeek": "Thursday",
+      "description": "A national holiday celebrating harvest and gratitude, traditionally celebrated with family gatherings and festive meals."
+    },
+    {
+      "id": "christmas-eve",
+      "name": "Christmas Eve",
+      "date": "2024-12-24",
+      "dayOfWeek": "Tuesday",
+      "description": "The evening before Christmas Day, traditionally celebrated with family gatherings and holiday preparations."
+    },
+    {
+      "id": "christmas-day",
+      "name": "Christmas Day",
+      "date": "2024-12-25",
+      "dayOfWeek": "Wednesday",
+      "description": "A Christian holiday celebrating the birth of Jesus Christ, widely celebrated around the world with gift-giving and festive celebrations."
+    },
+    {
+      "id": "new-years-eve",
+      "name": "New Year's Eve",
+      "date": "2024-12-31",
+      "dayOfWeek": "Tuesday",
+      "description": "The last day of the year, celebrated with countdown events, parties, and fireworks displays worldwide."
+    }
+  ]
+}

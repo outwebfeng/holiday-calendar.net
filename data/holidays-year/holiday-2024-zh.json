@@ -1,0 +1,32 @@
+{
+  "holidays": [
+    {
+      "id": "thanksgiving-day",
+      "name": "感恩节",
+      "date": "2024-11-28",
+      "dayOfWeek": "星期四",
+      "description": "感恩节是一个感恩丰收与感恩的节日，传统上人们会与家人团聚，享用节日大餐。"
+    },
+    {
+      "id": "christmas-eve",
+      "name": "平安夜",
+      "date": "2024-12-24",
+      "dayOfWeek": "星期二",
+      "description": "圣诞节前夜，人们通常与家人团聚，为圣诞节做准备。"
+    },
+    {
+      "id": "christmas-day",
+      "name": "圣诞节",
+      "date": "2024-12-25",
+      "dayOfWeek": "星期三",
+      "description": "基督教节日，庆祝耶稣基督的诞生，全球广泛庆祝，人们会互赠礼物并举行庆祝活动。"
+    },
+    {
+      "id": "new-years-eve",
+      "name": "跨年夜",
+      "date": "2024-12-31",
+      "dayOfWeek": "星期二",
+      "description": "一年的最后一天，全球各地都会举行倒计时活动、派对和烟花表演来庆祝。"
+    }
+  ]
+}
