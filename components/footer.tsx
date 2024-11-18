@@ -34,11 +34,6 @@ export default async function Footer() {
                   {navT("holidays")}
                 </a>
               </li>
-              <li>
-                <a href={`/${locale}/contact`} className="text-gray-600 hover:text-gray-900">
-                  {navT("contact")}
-                </a>
-              </li>
             </ul>
           </div>
 

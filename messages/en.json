@@ -6,8 +6,7 @@
   "navigation": {
     "home": "Home",
     "holidays": "Holidays",
-    "about": "About",
-    "contact": "Contact"
+    "about": "About"
   },
   "holidays": {
     "pageTitle": "Holiday Calendar",
@@ -127,5 +126,27 @@
     "rights": " 2024 Holiday Calendar. All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "about": {
+    "title": "About Holiday Calendar",
+    "mission": {
+      "title": "Our Mission",
+      "content": "Holiday Calendar is dedicated to enriching people's lives by helping them celebrate and understand holidays better. We strive to provide comprehensive, accurate, and culturally sensitive information about holidays across the United States, making it easier for everyone to participate in and appreciate these special occasions."
+    },
+    "features": {
+      "title": "What We Offer",
+      "item1": "Comprehensive holiday listings with accurate dates and countdowns",
+      "item2": "Detailed information about holiday histories, traditions, and customs",
+      "item3": "Multi-language support for better accessibility",
+      "item4": "Regular updates to ensure the most current holiday information"
+    },
+    "technology": {
+      "title": "Our Technology",
+      "content": "Built with cutting-edge web technologies including Next.js, TypeScript, and Tailwind CSS, our platform delivers a fast, reliable, and user-friendly experience. We utilize modern internationalization techniques to provide accurate and culturally appropriate content in multiple languages."
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "content": "We value your feedback and suggestions. Whether you've found an error, have a feature request, or just want to say hello, we'd love to hear from you. You can reach us through our contact page or follow us on social media for updates."
+    }
   }
 }

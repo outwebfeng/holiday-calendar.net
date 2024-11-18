@@ -6,8 +6,21 @@
   "navigation": {
     "home": "首页",
     "holidays": "节假日",
-    "about": "关于我们",
-    "contact": "联系我们"
+    "about": "关于我们"
+  },
+  "holidays": {
+    "pageTitle": "节日日历",
+    "search": "搜索节日...",
+    "noResults": "未找到节日",
+    "sortBy": {
+      "placeholder": "排序方式",
+      "date": "日期",
+      "name": "名称"
+    },
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页"
+    }
   },
   "hero": {
     "title": "您的终极美国节假日指南",
@@ -36,6 +49,10 @@
     "planning": {
       "title": "假日规划",
       "description": "获取完美庆祝活动的准备建议和活动提案"
+    },
+    "reminders": {
+      "title": "智能提醒",
+      "description": "通过我们的提醒系统，永不错过重要节日"
     }
   },
   "testimonials": {
@@ -96,29 +113,15 @@
     ]
   },
   "footer": {
-    "title": "美国节假日日历",
-    "description": "美国节假日的全面指南",
+    "title": "节日日历",
+    "description": "您的美国节日和庆祝活动综合指南",
     "quickLinks": "快速链接",
-    "legal": "法律",
+    "legal": "法律信息",
     "contact": "联系我们",
     "email": "support@holidaycalendar.net",
     "rights": " 2024 Holiday Calendar. ",
     "privacy": "隐私政策",
     "terms": "服务条款"
-  },
-  "holidays": {
-    "pageTitle": "节假日日历",
-    "search": "搜索节假日...",
-    "sortBy": {
-      "placeholder": "排序方式",
-      "date": "日期",
-      "name": "名称"
-    },
-    "noResults": "未找到节假日",
-    "pagination": {
-      "previous": "上一页",
-      "next": "下一页"
-    }
   },
   "holiday": {
     "countdown": "节日倒计时",
@@ -127,5 +130,27 @@
     "origin": "节日起源",
     "guide": "庆祝指南",
     "taboos": "注意事项"
+  },
+  "about": {
+    "title": "关于节日日历",
+    "mission": {
+      "title": "我们的使命",
+      "content": "节日日历致力于通过帮助人们更好地庆祝和理解节日来丰富人们的生活。我们努力提供全面、准确和文化敏感的美国节日信息，让每个人都能更轻松地参与和欣赏这些特殊的日子。"
+    },
+    "features": {
+      "title": "我们的服务",
+      "item1": "全面的节日列表，包含准确的日期和倒计时",
+      "item2": "详细的节日历史、传统和习俗信息",
+      "item3": "多语言支持，提升可访问性",
+      "item4": "定期更新，确保最新的节日信息"
+    },
+    "technology": {
+      "title": "我们的技术",
+      "content": "使用包括Next.js、TypeScript和Tailwind CSS在内的前沿网络技术构建，我们的平台提供快速、可靠和用户友好的体验。我们利用现代国际化技术，以多种语言提供准确和文化适当的内容。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "content": "我们重视您的反馈和建议。无论您是发现了错误、有功能请求，还是只想打个招呼，我们都很乐意听取您的意见。您可以通过我们的联系页面联系我们，或在社交媒体上关注我们以获取最新动态。"
+    }
   }
 }

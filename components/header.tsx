@@ -6,6 +6,7 @@ import { ChevronDown, Globe, Menu as MenuIcon } from "lucide-react";
 import { useState } from "react";
 import { LANGUAGES } from '@/i18n';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Header() {
   const t = useTranslations("navigation");
@@ -46,8 +47,15 @@ export default function Header() {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href={`/${currentLocale}`} className="text-xl font-semibold">
-              Holiday Calendar
+            <a href={`/${currentLocale}`} className="flex items-center space-x-2 text-xl font-semibold">
+              <Image
+                src="/favicon.ico"
+                alt="Holiday Calendar Logo"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
+              <span>Holiday Calendar</span>
             </a>
           </div>
 
@@ -62,9 +70,6 @@ export default function Header() {
               </a>
               <a href={`/${currentLocale}/about`} className="text-gray-700 hover:text-gray-900">
                 {t("about")}
-              </a>
-              <a href={`/${currentLocale}/contact`} className="text-gray-700 hover:text-gray-900">
-                {t("contact")}
               </a>
             </div>
           </div>
@@ -133,12 +138,6 @@ export default function Header() {
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
                 {t("about")}
-              </a>
-              <a
-                href={`/${currentLocale}/contact`}
-                className="block px-3 py-2 text-gray-700 hover:text-gray-900"
-              >
-                {t("contact")}
               </a>
               {/* Mobile Language Menu */}
               <div className="px-3 py-2">
