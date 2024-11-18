@@ -148,5 +148,57 @@
       "title": "Get in Touch",
       "content": "We value your feedback and suggestions. Whether you've found an error, have a feature request, or just want to say hello, we'd love to hear from you. You can reach us through our contact page or follow us on social media for updates."
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: November 2024",
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": "Welcome to Holiday Calendar. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we handle your information when you use our website."
+      },
+      {
+        "title": "Information We Collect",
+        "content": "We collect minimal information necessary to provide our services, including: browser type, device information, and cookies for site functionality."
+      },
+      {
+        "title": "How We Use Your Information",
+        "content": "We use the collected information to provide and improve our services, analyze site usage, and maintain site security."
+      },
+      {
+        "title": "Data Security",
+        "content": "We implement appropriate security measures to protect your information against unauthorized access or disclosure."
+      },
+      {
+        "title": "Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information. Contact us if you wish to exercise these rights."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: November 2024",
+    "sections": [
+      {
+        "title": "Agreement to Terms",
+        "content": "By accessing Holiday Calendar, you agree to be bound by these Terms of Service and all applicable laws and regulations."
+      },
+      {
+        "title": "Use License",
+        "content": "Permission is granted to temporarily access the materials on Holiday Calendar for personal, non-commercial use only."
+      },
+      {
+        "title": "Disclaimer",
+        "content": "The materials on Holiday Calendar are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim all warranties."
+      },
+      {
+        "title": "Limitations",
+        "content": "Holiday Calendar shall not be held liable for any damages arising out of the use or inability to use our services."
+      },
+      {
+        "title": "Revisions",
+        "content": "We may update these terms of service at any time. By using this website you are agreeing to be bound by the current version."
+      }
+    ]
   }
 }
