@@ -50,43 +50,51 @@ export default async function HolidayDetailPage({ params }: HolidayDetailPagePro
             })}</p>
           </Card>
 
-          {/* Description */}
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <Info className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl font-semibold">{t('description')}</h2>
-            </div>
-            <p className="text-lg leading-relaxed ml-9">{holiday.description}</p>
-          </Card>
+          {/* Description - Only show if available */}
+          {holiday.description && (
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <Info className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-semibold">{t('description')}</h2>
+              </div>
+              <p className="text-lg leading-relaxed ml-9">{holiday.description}</p>
+            </Card>
+          )}
 
-          {/* Origin */}
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <History className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl font-semibold">{t('origin')}</h2>
-            </div>
-            <p className="text-lg leading-relaxed ml-9">{holiday.origin}</p>
-          </Card>
+          {/* Origin - Only show if available */}
+          {holiday.origin && (
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <History className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-semibold">{t('origin')}</h2>
+              </div>
+              <p className="text-lg leading-relaxed ml-9">{holiday.origin}</p>
+            </Card>
+          )}
 
-          {/* Celebration Guide */}
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <PartyPopper className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl font-semibold">{t('guide')}</h2>
-            </div>
-            <p className="text-lg leading-relaxed ml-9">{holiday.guide}</p>
-          </Card>
+          {/* Celebration Guide - Only show if available */}
+          {holiday.guide && (
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <PartyPopper className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-semibold">{t('guide')}</h2>
+              </div>
+              <p className="text-lg leading-relaxed ml-9">{holiday.guide}</p>
+            </Card>
+          )}
 
-          {/* Taboos */}
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <AlertTriangle className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl font-semibold">{t('taboos')}</h2>
-            </div>
-            <div className="text-lg leading-relaxed ml-9 whitespace-pre-line">
-              {holiday.taboos}
-            </div>
-          </Card>
+          {/* Taboos - Only show if available */}
+          {holiday.taboos && (
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <AlertTriangle className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-semibold">{t('taboos')}</h2>
+              </div>
+              <div className="text-lg leading-relaxed ml-9 whitespace-pre-line">
+                {holiday.taboos}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
     </main>

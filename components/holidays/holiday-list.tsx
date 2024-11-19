@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HolidayCard } from './holiday-card';
 import { HolidayFilters } from './holiday-filters';
 import { Pagination } from './pagination';
-import { Holiday } from '@/lib/get-holidays';
+import { getAllHolidays } from '@/lib/get-holidays';
 import { useTranslations } from 'next-intl';
 import { LanguageCode } from '@/i18n';
 
-const ITEMS_PER_PAGE = 9;
+const ITEMS_PER_PAGE = 24;
 
 const container = {
   hidden: { opacity: 0 },
@@ -27,24 +27,26 @@ interface HolidayListProps {
 }
 
 export function HolidayList({ holidays, locale }: HolidayListProps) {
-  const t = useTranslations();
+  const t = useTranslations('holidays');
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState('date');
 
   // Memoize filtered and sorted holidays
   const filteredHolidays = useMemo(() => {
-    const filtered = [...holidays]
-      .filter(holiday => 
-        holiday.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        holiday.description.toLowerCase().includes(searchTerm.toLowerCase())
+    let filtered = [...holidays];
+
+    // Apply search filter
+    if (searchTerm) {
+      filtered = filtered.filter(holiday => 
+        holiday.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
+    }
     
+    // Apply sorting
     return filtered.sort((a, b) => {
       if (sortBy === 'date') {
-        const dateA = new Date(a.date).getTime();
-        const dateB = new Date(b.date).getTime();
-        return dateA - dateB;
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
       }
       return a.name.localeCompare(b.name);
     });
@@ -66,12 +68,11 @@ export function HolidayList({ holidays, locale }: HolidayListProps) {
 
   const handleSortChange = useCallback((value: string) => {
     setSortBy(value);
-    setCurrentPage(1);
   }, []);
 
   return (
-    <div className="space-y-6">
-      <div className="flex justify-end items-center">
+    <div className="space-y-8">
+      <div className="flex justify-end">
         <HolidayFilters
           searchTerm={searchTerm}
           onSearchChange={setSearchTerm}
@@ -82,41 +83,45 @@ export function HolidayList({ holidays, locale }: HolidayListProps) {
 
       <AnimatePresence mode="wait">
         {filteredHolidays.length > 0 ? (
-          <motion.div
-            key={`holiday-grid-${sortBy}`}
-            variants={container}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {currentItems.map((holiday) => (
-              <HolidayCard
-                key={`${holiday.id}-${sortBy}`}
-                holiday={holiday}
-                locale={locale}
-              />
-            ))}
-          </motion.div>
+          <>
+            <motion.div
+              key={`holiday-grid-${sortBy}`}
+              variants={container}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
+              {currentItems.map((holiday) => (
+                <HolidayCard
+                  key={`${holiday.id}-${sortBy}`}
+                  holiday={holiday}
+                  locale={locale}
+                />
+              ))}
+            </motion.div>
+
+            {totalPages > 1 && (
+              <div className="flex justify-center mt-8">
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={setCurrentPage}
+                />
+              </div>
+            )}
+          </>
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="text-center py-8"
+            className="text-center py-12 text-muted-foreground"
           >
-            <p className="text-gray-500">{t('holidays.noResults')}</p>
+            {t('noResults')}
           </motion.div>
         )}
       </AnimatePresence>
-
-      {filteredHolidays.length > ITEMS_PER_PAGE && (
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
-      )}
     </div>
   );
 }

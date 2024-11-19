@@ -1,32 +1,513 @@
 {
   "holidays": [
     {
+      "id": "world-toilet-day",
+      "name": "World Toilet Day",
+      "date": "2024-11-19",
+      "dayOfWeek": "Tuesday",
+      "type": "4"
+    },
+    {
+      "id": "international-mens-day",
+      "name": "International Men's Day",
+      "date": "2024-11-19",
+      "dayOfWeek": "Tuesday",
+      "type": "4"
+    },
+    {
+      "id": "george-rogers-clark-day",
+      "name": "George Rogers Clark Day",
+      "date": "2024-11-19",
+      "dayOfWeek": "Tuesday",
+      "type": "6"
+    },
+    {
+      "id": "universal-childrens-day",
+      "name": "Universal Children's Day",
+      "date": "2024-11-20",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "gis-day",
+      "name": "GIS Day",
+      "date": "2024-11-20",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "africa-industrialization-day",
+      "name": "Africa Industrialization Day",
+      "date": "2024-11-20",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "transgender-day-of-remembrance",
+      "name": "Transgender Day of Remembrance",
+      "date": "2024-11-20",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "world-television-day",
+      "name": "World Television Day",
+      "date": "2024-11-21",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "great-american-smokeout-day",
+      "name": "Great American Smokeout Day",
+      "date": "2024-11-21",
+      "dayOfWeek": "Thursday",
+      "type": "5"
+    },
+    {
+      "id": "national-stuffing-day",
+      "name": "National Stuffing Day",
+      "date": "2024-11-21",
+      "dayOfWeek": "Thursday",
+      "type": "5"
+    },
+    {
+      "id": "world-hello-day",
+      "name": "World Hello Day",
+      "date": "2024-11-21",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "world-philosophy-day",
+      "name": "World Philosophy Day",
+      "date": "2024-11-21",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "fake-friday",
+      "name": "Fake Friday",
+      "date": "2024-11-22",
+      "dayOfWeek": "Friday",
+      "type": "5"
+    },
+    {
+      "id": "national-espresso-day",
+      "name": "National Espresso Day",
+      "date": "2024-11-23",
+      "dayOfWeek": "Saturday",
+      "type": "5"
+    },
+    {
+      "id": "international-day-elimination-violence-against-women",
+      "name": "International Day for the Elimination of Violence against Women",
+      "date": "2024-11-25",
+      "dayOfWeek": "Monday",
+      "type": "4"
+    },
+    {
       "id": "thanksgiving-day",
       "name": "Thanksgiving Day",
       "date": "2024-11-28",
       "dayOfWeek": "Thursday",
-      "description": "A national holiday celebrating harvest and gratitude, traditionally celebrated with family gatherings and festive meals."
+      "type": "1"
+    },
+    {
+      "id": "national-day-of-mourning",
+      "name": "National Day Of Mourning",
+      "date": "2024-11-28",
+      "dayOfWeek": "Thursday",
+      "type": "2"
+    },
+    {
+      "id": "national-french-toast-day",
+      "name": "National French Toast Day",
+      "date": "2024-11-28",
+      "dayOfWeek": "Thursday",
+      "type": "5"
+    },
+    {
+      "id": "black-friday",
+      "name": "Black Friday",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "2"
+    },
+    {
+      "id": "native-american-heritage-day",
+      "name": "Native American Heritage Day",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "2"
+    },
+    {
+      "id": "international-day-solidarity-palestinian-people",
+      "name": "International Day of Solidarity with the Palestinian People",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "4"
+    },
+    {
+      "id": "nellie-tayloe-ross-birthday",
+      "name": "Nellie Tayloe Ross's Birthday",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "6"
+    },
+    {
+      "id": "state-holiday",
+      "name": "State Holiday",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "6"
+    },
+    {
+      "id": "presidents-day",
+      "name": "Presidents' Day",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "1"
+    },
+    {
+      "id": "lincolns-birthday",
+      "name": "Lincoln's Birthday/Lincoln's Day",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "6"
+    },
+    {
+      "id": "day-after-thanksgiving",
+      "name": "Day After Thanksgiving",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "5"
+    },
+    {
+      "id": "american-indian-heritage-day",
+      "name": "American Indian Heritage Day",
+      "date": "2024-11-29",
+      "dayOfWeek": "Friday",
+      "type": "5"
+    },
+    {
+      "id": "small-business-saturday",
+      "name": "Small Business Saturday",
+      "date": "2024-11-30",
+      "dayOfWeek": "Saturday",
+      "type": "5"
+    },
+    {
+      "id": "day-remembrance-chemical-warfare-victims",
+      "name": "Day of Remembrance for all Victims of Chemical Warfare",
+      "date": "2024-11-30",
+      "dayOfWeek": "Saturday",
+      "type": "4"
+    },
+    {
+      "id": "world-aids-day",
+      "name": "World AIDS Day",
+      "date": "2024-12-01",
+      "dayOfWeek": "Sunday",
+      "type": "4"
+    },
+    {
+      "id": "first-sunday-advent",
+      "name": "First Sunday of Advent",
+      "date": "2024-12-01",
+      "dayOfWeek": "Sunday",
+      "type": "5"
+    },
+    {
+      "id": "rosa-parks-day",
+      "name": "Rosa Parks Day",
+      "date": "2024-12-01",
+      "dayOfWeek": "Sunday",
+      "type": "2"
+    },
+    {
+      "id": "international-day-abolition-slavery",
+      "name": "International Day for the Abolition of Slavery",
+      "date": "2024-12-02",
+      "dayOfWeek": "Monday",
+      "type": "4"
+    },{
+      "id": "cyber-monday",
+      "name": "Cyber Monday",
+      "date": "2024-12-02",
+      "dayOfWeek": "Monday",
+      "type": "2"
+    },
+    {
+      "id": "giving-tuesday",
+      "name": "Giving Tuesday",
+      "date": "2024-12-03",
+      "dayOfWeek": "Tuesday",
+      "type": "5"
+    },
+    {
+      "id": "international-day-persons-disabilities",
+      "name": "International Day of Persons with Disabilities",
+      "date": "2024-12-03",
+      "dayOfWeek": "Tuesday",
+      "type": "4"
+    },
+    {
+      "id": "international-day-banks",
+      "name": "International Day of Banks",
+      "date": "2024-12-04",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "national-repeal-day",
+      "name": "National Repeal Day",
+      "date": "2024-12-05",
+      "dayOfWeek": "Thursday",
+      "type": "5"
+    },
+    {
+      "id": "international-volunteer-day",
+      "name": "International Volunteer Day for Economic and Social Development",
+      "date": "2024-12-05",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "world-soil-day",
+      "name": "World Soil Day",
+      "date": "2024-12-05",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },{
+      "id": "st-nicholas-day",
+      "name": "St Nicholas Day",
+      "date": "2024-12-06",
+      "dayOfWeek": "Friday",
+      "type": "4"
+    },
+    {
+      "id": "pearl-harbor-remembrance-day",
+      "name": "Pearl Harbor Remembrance Day",
+      "date": "2024-12-07",
+      "dayOfWeek": "Saturday",
+      "type": "2"
+    },
+    {
+      "id": "international-civil-aviation-day",
+      "name": "International Civil Aviation Day",
+      "date": "2024-12-07",
+      "dayOfWeek": "Saturday",
+      "type": "4"
+    },
+    {
+      "id": "delaware-day",
+      "name": "Delaware Day",
+      "date": "2024-12-07",
+      "dayOfWeek": "Saturday",
+      "type": "6"
+    },
+    {
+      "id": "feast-immaculate-conception",
+      "name": "Feast of the Immaculate Conception",
+      "date": "2024-12-09",
+      "dayOfWeek": "Monday",
+      "type": "3"
+    },
+    {
+      "id": "international-anti-corruption-day",
+      "name": "International Anti-Corruption Day",
+      "date": "2024-12-09",
+      "dayOfWeek": "Monday",
+      "type": "4"
+    },
+    {
+      "id": "world-genocide-commemoration-day",
+      "name": "World Genocide Commemoration Day",
+      "date": "2024-12-09",
+      "dayOfWeek": "Monday",
+      "type": "4"
+    },
+    {
+      "id": "green-monday",
+      "name": "Green Monday",
+      "date": "2024-12-09",
+      "dayOfWeek": "Monday",
+      "type": "5"
+    },
+    {
+      "id": "wyoming-day",
+      "name": "Wyoming Day",
+      "date": "2024-12-10",
+      "dayOfWeek": "Tuesday",
+      "type": "6"
+    },
+    {
+      "id": "human-rights-day",
+      "name": "Human Rights Day",
+      "date": "2024-12-10",
+      "dayOfWeek": "Tuesday",
+      "type": "4"
+    },
+    {
+      "id": "international-mountain-day",
+      "name": "International Mountain Day",
+      "date": "2024-12-11",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "international-day-neutrality",
+      "name": "International Day of Neutrality",
+      "date": "2024-12-12",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "international-universal-health-coverage-day",
+      "name": "International Universal Health Coverage Day",
+      "date": "2024-12-12",
+      "dayOfWeek": "Thursday",
+      "type": "4"
+    },
+    {
+      "id": "feast-our-lady-guadalupe",
+      "name": "Feast of Our Lady of Guadalupe",
+      "date": "2024-12-12",
+      "dayOfWeek": "Thursday",
+      "type": "3"
+    },
+    {
+      "id": "friday-thirteenth",
+      "name": "Friday the 13th",
+      "date": "2024-12-13",
+      "dayOfWeek": "Friday",
+      "type": "5"
+    },
+    {
+      "id": "national-guard-birthday",
+      "name": "National Guard Birthday",
+      "date": "2024-12-13",
+      "dayOfWeek": "Friday",
+      "type": "5"
+    },
+    {
+      "id": "bill-of-rights-day",
+      "name": "Bill of Rights Day",
+      "date": "2024-12-15",
+      "dayOfWeek": "Sunday",
+      "type": "5"
+    },
+    {
+      "id": "pan-american-aviation-day",
+      "name": "Pan American Aviation Day",
+      "date": "2024-12-17",
+      "dayOfWeek": "Tuesday",
+      "type": "5"
+    },
+    {
+      "id": "wright-brothers-day",
+      "name": "Wright Brothers Day",
+      "date": "2024-12-17",
+      "dayOfWeek": "Tuesday",
+      "type": "5"
+    },
+    {
+      "id": "international-migrants-day",
+      "name": "International Migrants Day",
+      "date": "2024-12-18",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "arabic-language-day",
+      "name": "Arabic Language Day",
+      "date": "2024-12-18",
+      "dayOfWeek": "Wednesday",
+      "type": "4"
+    },
+    {
+      "id": "international-human-solidarity-day",
+      "name": "International Human Solidarity Day",
+      "date": "2024-12-20",
+      "dayOfWeek": "Friday",
+      "type": "4"
+    },
+    {
+      "id": "super-saturday",
+      "name": "Super Saturday",
+      "date": "2024-12-21",
+      "dayOfWeek": "Saturday",
+      "type": "5"
+    },
+    {
+      "id": "winter-solstice",
+      "name": "Start of Winter (Winter Solstice)",
+      "date": "2024-12-21",
+      "dayOfWeek": "Saturday",
+      "type": "4"
+    },
+    {
+      "id": "december-solstice",
+      "name": "December Solstice",
+      "date": "2024-12-21",
+      "dayOfWeek": "Saturday",
+      "type": "4"
     },
     {
       "id": "christmas-eve",
       "name": "Christmas Eve",
       "date": "2024-12-24",
       "dayOfWeek": "Tuesday",
-      "description": "The evening before Christmas Day, traditionally celebrated with family gatherings and holiday preparations."
+      "type": "2"
     },
     {
       "id": "christmas-day",
       "name": "Christmas Day",
       "date": "2024-12-25",
       "dayOfWeek": "Wednesday",
-      "description": "A Christian holiday celebrating the birth of Jesus Christ, widely celebrated around the world with gift-giving and festive celebrations."
+      "type": "1"
+    },
+    {
+      "id": "hanukkah-begins",
+      "name": "Ganukkah Begins",
+      "date": "2024-12-25",
+      "dayOfWeek": "Wednesday",
+      "type": "3"
+    },
+    {
+      "id": "kwanzaa",
+      "name": "Kwanzaa",
+      "date": "2024-12-26",
+      "dayOfWeek": "Thursday",
+      "type": "2"
+    },
+    {
+      "id": "hanukkah-first-day",
+      "name": "Chanukah/Hanukkah (first day)",
+      "date": "2024-12-26",
+      "dayOfWeek": "Thursday",
+      "type": "3"
+    },
+    {
+      "id": "day-after-christmas",
+      "name": "Day After Christmas Day",
+      "date": "2024-12-26",
+      "dayOfWeek": "Thursday",
+      "type": "5"
+    },
+    {
+      "id": "international-day-epidemic-preparedness",
+      "name": "International Day of Epidemic Preparedness",
+      "date": "2024-12-27",
+      "dayOfWeek": "Friday",
+      "type": "4"
     },
     {
       "id": "new-years-eve",
       "name": "New Year's Eve",
       "date": "2024-12-31",
       "dayOfWeek": "Tuesday",
-      "description": "The last day of the year, celebrated with countdown events, parties, and fireworks displays worldwide."
+      "type": "2"
     }
   ]
 }

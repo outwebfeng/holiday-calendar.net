@@ -3,7 +3,6 @@
     {
       "id": "independence-day",
       "name": "Independence Day",
-      "date": "2024-07-04",
       "description": "Independence Day commemorates the adoption of the Declaration of Independence on July 4, 1776.",
       "origin": "The Fourth of July celebrates the passage of the Declaration of Independence by the Continental Congress in 1776. This historic document declared the 13 American colonies' independence from Great Britain.",
       "guide": "Traditional celebrations include fireworks displays, parades, barbecues, carnivals, picnics, and various other public and private events celebrating American independence and history.",
@@ -12,7 +11,6 @@
     {
       "id": "thanksgiving-day",
       "name": "Thanksgiving Day",
-      "date": "2024-11-28",
       "description": "Thanksgiving is a national holiday celebrating the harvest and other blessings of the past year.",
       "origin": "The modern Thanksgiving holiday tradition traces its origins to a 1621 celebration by Pilgrims after their first harvest in the New World. The event lasted three days and was attended by 90 Native Americans and 53 Pilgrims.",
       "guide": "Traditional celebrations include family gatherings, turkey dinner, watching football games, and expressing gratitude. Many also participate in volunteering at local food banks or shelters.",
@@ -21,7 +19,6 @@
     {
       "id": "christmas-day",
       "name": "Christmas Day",
-      "date": "2024-12-25",
       "description": "Christmas is both a sacred religious holiday and a worldwide cultural and commercial phenomenon.",
       "origin": "Christmas celebrates the birth of Jesus Christ in Bethlehem. The modern Christmas tradition combines Christian customs with ancient winter solstice celebrations and various cultural practices.",
       "guide": "Celebrations include decorating Christmas trees, exchanging gifts, attending church services, sharing meals with family and friends, and waiting for Santa Claus.",
