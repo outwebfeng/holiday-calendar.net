@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 export function Analytics() {
-  return process.env.NEXT_PUBLIC_GA_ID ? (
+  return (
     <>
       <Script
         strategy="afterInteractive"
@@ -23,7 +23,11 @@ export function Analytics() {
           `,
         }}
       />
-      <script defer data-domain="holidaycalendar.net" src="https://www.perpetualcalendar.top/js/script.js"></script>
+      <Script
+        strategy="afterInteractive"
+        data-domain="holidaycalendar.net"
+        src="https://www.perpetualcalendar.top/js/script.js"
+      />
     </>
-  ) : null;
+  );
 }
