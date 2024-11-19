@@ -1,9 +1,40 @@
-"use client";
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { LanguageCode, LANGUAGES } from '@/i18n';
+import { Metadata } from 'next';
 
-import { useTranslations } from "next-intl";
+interface AboutPageProps {
+  params: {
+    locale: string;
+  };
+}
 
-export default function AboutPage() {
-  const t = useTranslations("about");
+export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
+  const locale = params.locale as LanguageCode;
+  unstable_setRequestLocale(locale);
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const canonicalUrl = locale === 'en' 
+    ? `${siteUrl}/about`
+    : `${siteUrl}/${locale}/about`;
+
+  const languages = LANGUAGES.reduce((acc, lang) => {
+    if (lang.code === 'en') return acc;
+    return {
+      ...acc,
+      [lang.code]: `${siteUrl}/${lang.code}/about`,
+    };
+  }, {});
+
+  return {
+    alternates: {
+      canonical: canonicalUrl,
+      languages,
+    },
+  };
+}
+
+export default async function AboutPage() {
+  const t = await getTranslations("about");
 
   return (
     <div className="max-w-4xl mx-auto px-4 pt-32 pb-12 sm:px-6 lg:px-8">

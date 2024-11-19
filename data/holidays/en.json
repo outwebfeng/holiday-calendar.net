@@ -1,28 +1,45 @@
 {
   "holidays": [
     {
-      "id": "independence-day",
-      "name": "Independence Day",
-      "description": "Independence Day commemorates the adoption of the Declaration of Independence on July 4, 1776.",
-      "origin": "The Fourth of July celebrates the passage of the Declaration of Independence by the Continental Congress in 1776. This historic document declared the 13 American colonies' independence from Great Britain.",
-      "guide": "Traditional celebrations include fireworks displays, parades, barbecues, carnivals, picnics, and various other public and private events celebrating American independence and history.",
-      "taboos": "- Avoid improper display of the American flag\n- Don't use illegal fireworks\n- Be mindful of veterans with PTSD during fireworks"
+      "id": "world-toilet-day",
+      "name": "World Toilet Day",
+      "description": "World Toilet Day is an annual global observance that highlights the importance of sanitation and hygiene. It aims to raise awareness about the critical role toilets play in public health and sustainable development. Every year, this day emphasizes the need to ensure proper sanitation for everyone and to address the global sanitation crisis.\n\nThe event was established by the United Nations in 2013 as a way to focus global attention on the Sustainable Development Goal (SDG) 6.2, which advocates for access to adequate sanitation and hygiene for all by 2030. Each year, a unique theme is chosen to underline specific sanitation challenges and solutions.\n\nWorld Toilet Day serves as a reminder of the 3.6 billion people worldwide who still lack safely managed sanitation. It brings governments, organizations, and communities together to initiate and support efforts to improve global sanitation infrastructure and practices.",
+      "origin": "World Toilet Day originated from the advocacy efforts of the World Toilet Organization, founded in 2001 by Jack Sim, a sanitation activist. Sim’s mission was to break the taboo surrounding toilets and sanitation by initiating open discussions about these essential topics. In 2001, the first World Toilet Summit was held, bringing together policymakers, experts, and advocates to address global sanitation issues.\n\nIn 2013, the United Nations officially adopted World Toilet Day as an international observance. This decision was driven by the recognition of the severe global sanitation crisis, where billions of people lack access to proper sanitation facilities. The day was aligned with the UN’s Sustainable Development Goals, specifically Goal 6, which aims to ensure clean water and sanitation for all.\n\nSince its official adoption, World Toilet Day has grown into a powerful platform for raising awareness and promoting action. Governments, NGOs, and private sectors organize events, campaigns, and initiatives worldwide to improve access to toilets and educate people about hygiene practices. Over the years, this day has not only shed light on sanitation challenges but also fostered innovative solutions, partnerships, and investments in sanitation infrastructure.",
+      "guide": "Celebrating World Toilet Day involves participation in events, educational campaigns, and advocacy activities that emphasize sanitation and hygiene. Start by learning about this year’s theme and exploring resources provided by the United Nations and other organizations. Sharing information about sanitation issues on social media using hashtags like #WorldToiletDay helps amplify the message.\n\nOrganizations and schools can organize workshops, community cleanups, or sanitation facility upgrades. These activities create direct impact and raise awareness at the grassroots level. Holding open discussions about the importance of toilets and hygiene can also help break the stigma around these topics.\n\nIndividuals can contribute by donating to organizations working to improve global sanitation or volunteering for local initiatives. Even small actions, such as teaching proper handwashing techniques, can make a big difference. Engaging in such activities on World Toilet Day contributes to the global effort to improve sanitation and hygiene for everyone.",
+      "taboos": "- Avoid treating sanitation topics as unimportant or trivial.\n- Do not ignore discussions about sanitation crises or lack of hygiene.\n- Avoid perpetuating stigmas surrounding toilets and sanitation issues."
+    }
+    ,
+    {
+      "id": "international-mens-day",
+      "name": "International Men's Day",
+      "description": "International Men's Day is a day to celebrate the positive contributions of men to society, family, and community. Held annually on November 19, International Men's Day also raises awareness about men's health, mental well-being, and the challenges they face. It is an opportunity to promote positive role models and gender equality while highlighting the value of men’s contributions in various fields.",
+      "origin": "International Men's Day was inaugurated in 1999 by Dr. Jerome Teelucksingh in Trinidad and Tobago. The date, November 19, was chosen to honor his father’s birthday and a moment of unity achieved during a soccer match. The day is celebrated in more than 80 countries, focusing on six pillars, including promoting positive male role models and improving gender relations.",
+      "guide": "On International Men's Day, events such as workshops, conferences, and cultural activities are organized to discuss men's issues. Communities can celebrate by recognizing the achievements of men and supporting initiatives that address men’s health concerns. Sharing positive stories about male figures on social media helps spread awareness.",
+      "taboos": "Avoid dismissing International Men's Day as irrelevant or comparing it to International Women's Day. Both have unique purposes and complement each other in promoting gender equality. Avoid stereotyping or undermining the challenges faced by men."
     },
     {
-      "id": "thanksgiving-day",
-      "name": "Thanksgiving Day",
-      "description": "Thanksgiving is a national holiday celebrating the harvest and other blessings of the past year.",
-      "origin": "The modern Thanksgiving holiday tradition traces its origins to a 1621 celebration by Pilgrims after their first harvest in the New World. The event lasted three days and was attended by 90 Native Americans and 53 Pilgrims.",
-      "guide": "Traditional celebrations include family gatherings, turkey dinner, watching football games, and expressing gratitude. Many also participate in volunteering at local food banks or shelters.",
-      "taboos": "- Don't discuss controversial topics at family gatherings\n- Avoid shopping during family time\n- Remember to be inclusive of all cultural perspectives"
+      "id": "george-rogers-clark-day",
+      "name": "George Rogers Clark Day",
+      "description": "George Rogers Clark Day honors the contributions of General George Rogers Clark, a Revolutionary War hero who played a pivotal role in securing the Northwest Territory for the United States. Celebrated on November 19, this day commemorates his strategic victories and lasting impact on American history. George Rogers Clark’s military achievements were vital in shaping the nation’s early development.",
+      "origin": "George Rogers Clark Day is recognized in Indiana and other states to celebrate Clark’s leadership during the Revolutionary War. His victory at the Battle of Vincennes in 1779 is considered one of the most remarkable feats of the war. Established by state legislatures, this day acknowledges his influence on expanding American frontiers.",
+      "guide": "People commemorate George Rogers Clark Day by visiting historical sites, attending reenactments, and participating in educational programs about his life and achievements. Schools and museums often host events to highlight his contributions to American independence.",
+      "taboos": "Do not ignore the broader historical context of George Rogers Clark’s campaigns. Recognizing the impact on Indigenous populations is crucial to presenting a balanced perspective. Avoid glorifying war without acknowledging its complexities."
     },
     {
-      "id": "christmas-day",
-      "name": "Christmas Day",
-      "description": "Christmas is both a sacred religious holiday and a worldwide cultural and commercial phenomenon.",
-      "origin": "Christmas celebrates the birth of Jesus Christ in Bethlehem. The modern Christmas tradition combines Christian customs with ancient winter solstice celebrations and various cultural practices.",
-      "guide": "Celebrations include decorating Christmas trees, exchanging gifts, attending church services, sharing meals with family and friends, and waiting for Santa Claus.",
-      "taboos": "- Don't forget to be inclusive of different beliefs\n- Avoid excessive commercialization\n- Be mindful of those who might be alone during holidays"
+      "id": "universal-childrens-day",
+      "name": "Universal Children's Day",
+      "description": "Universal Children's Day is dedicated to promoting children's rights and improving their well-being worldwide. Observed on November 20, this day emphasizes the importance of education, health care, and safety for all children. It is a reminder of the commitments made by nations to uphold children’s rights and create a nurturing environment for their growth.",
+      "origin": "Universal Children's Day was established in 1954 by the United Nations to promote international unity and awareness among children. The date also marks the adoption of the Declaration of the Rights of the Child and the Convention on the Rights of the Child in 1989.",
+      "guide": "Organizations and individuals celebrate Universal Children's Day by hosting events, organizing workshops on child welfare, and donating to children’s charities. Schools can educate students about their rights and responsibilities. Families can also spend quality time with children to reinforce their importance.",
+      "taboos": "Avoid using Universal Children's Day as a marketing gimmick. Ensure activities and discussions focus on children’s rights and their actual needs. Do not neglect the global issues that affect children, such as poverty and education disparity."
+    },
+    {
+      "id": "gis-day",
+      "name": "GIS Day",
+      "description": "GIS Day is an annual event celebrating Geographic Information Systems (GIS) technology and its impact on our world. Held on November 20, GIS Day provides an opportunity to learn about mapping and spatial analysis while recognizing its applications in various fields, such as urban planning, environmental conservation, and disaster management.",
+      "origin": "GIS Day was first celebrated in 1999, initiated by Esri as a way to raise awareness about GIS technology. It was inspired by Ralph Nader’s advocacy for grassroots participation in technology and is now observed globally to showcase the benefits of geographic analysis.",
+      "guide": "Participants celebrate GIS Day by attending workshops, demonstrations, and map exhibitions. Professionals and students can share their GIS projects and engage in discussions about its applications. Hosting community mapping activities can also spread awareness about the importance of spatial data.",
+      "taboos": "Avoid presenting GIS Day as an event exclusively for professionals. Emphasize inclusivity and the broad utility of GIS in everyday life. Ensure that activities are accessible and engaging for people from all backgrounds."
     }
   ]
 }

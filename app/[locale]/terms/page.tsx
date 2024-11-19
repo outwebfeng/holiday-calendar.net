@@ -1,9 +1,37 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { LanguageCode, LANGUAGES } from '@/i18n';
+import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+interface TermsPageProps {
+  params: {
+    locale: string;
+  };
+}
+
+export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
+  const locale = params.locale as LanguageCode;
+  unstable_setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'terms' });
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const canonicalUrl = locale === 'en' 
+    ? `${siteUrl}/terms`
+    : `${siteUrl}/${locale}/terms`;
+
+  const languages = LANGUAGES.reduce((acc, lang) => {
+    if (lang.code === 'en') return acc;
+    return {
+      ...acc,
+      [lang.code]: `${siteUrl}/${lang.code}/terms`,
+    };
+  }, {});
+
   return {
     title: t('title'),
+    alternates: {
+      canonical: canonicalUrl,
+      languages,
+    },
   };
 }
 

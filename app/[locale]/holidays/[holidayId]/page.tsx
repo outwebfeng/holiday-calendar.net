@@ -1,15 +1,51 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { getHolidayDetail } from '@/lib/get-holiday-detail';
-import { LanguageCode } from '@/i18n';
+import { LanguageCode, LANGUAGES } from '@/i18n';
 import { ClientCountdown } from '@/components/ClientCountdown';
 import { Card } from '@/components/ui/card';
 import { Calendar, Info, History, PartyPopper, AlertTriangle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { Metadata } from 'next';
 
 interface HolidayDetailPageProps {
   params: {
     holidayId: string;
     locale: string;
+  };
+}
+
+export async function generateMetadata({ params }: HolidayDetailPageProps): Promise<Metadata> {
+  const locale = params.locale as LanguageCode;
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations('holiday');
+  const holiday = await getHolidayDetail(params.holidayId, locale);
+
+  if (!holiday) {
+    return {};
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const canonicalUrl = locale === 'en' 
+    ? `${siteUrl}/holidays/${params.holidayId}`
+    : `${siteUrl}/${locale}/holidays/${params.holidayId}`;
+
+  const languages = LANGUAGES.reduce((acc, lang) => {
+    if (lang.code === 'en') return acc;
+    return {
+      ...acc,
+      [lang.code]: `${siteUrl}/${lang.code}/holidays/${params.holidayId}`,
+    };
+  }, {});
+
+  return {
+    title: holiday.name,
+    description: holiday.description?.split('\n')[0] || '',
+    alternates: {
+      canonical: canonicalUrl,
+      languages,
+    },
   };
 }
 
@@ -53,49 +89,63 @@ export default async function HolidayDetailPage({ params }: HolidayDetailPagePro
               })}</p>
             </Card>
           )}
-
-          {/* Description - Only show if available */}
+          
+          {/* Description Section */}
           {holiday.description && (
             <Card className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <Info className="h-6 w-6 text-primary" />
                 <h2 className="text-2xl font-semibold">{t('description')}</h2>
               </div>
-              <p className="text-lg leading-relaxed ml-9">{holiday.description}</p>
+              <div className="prose prose-lg dark:prose-invert ml-9">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {holiday.description}
+                </ReactMarkdown>
+              </div>
             </Card>
           )}
-
-          {/* Origin - Only show if available */}
+          
+          {/* Origin Section */}
           {holiday.origin && (
             <Card className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <History className="h-6 w-6 text-primary" />
                 <h2 className="text-2xl font-semibold">{t('origin')}</h2>
               </div>
-              <p className="text-lg leading-relaxed ml-9">{holiday.origin}</p>
+              <div className="prose prose-lg dark:prose-invert ml-9">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {holiday.origin}
+                </ReactMarkdown>
+              </div>
             </Card>
           )}
-
-          {/* Celebration Guide - Only show if available */}
+          
+          {/* Guide Section */}
           {holiday.guide && (
             <Card className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <PartyPopper className="h-6 w-6 text-primary" />
                 <h2 className="text-2xl font-semibold">{t('guide')}</h2>
               </div>
-              <p className="text-lg leading-relaxed ml-9">{holiday.guide}</p>
+              <div className="prose prose-lg dark:prose-invert ml-9">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {holiday.guide}
+                </ReactMarkdown>
+              </div>
             </Card>
           )}
-
-          {/* Taboos - Only show if available */}
+          
+          {/* Taboos Section */}
           {holiday.taboos && (
             <Card className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <AlertTriangle className="h-6 w-6 text-primary" />
                 <h2 className="text-2xl font-semibold">{t('taboos')}</h2>
               </div>
-              <div className="text-lg leading-relaxed ml-9 whitespace-pre-line">
-                {holiday.taboos}
+              <div className="prose prose-lg dark:prose-invert ml-9">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {holiday.taboos}
+                </ReactMarkdown>
               </div>
             </Card>
           )}
