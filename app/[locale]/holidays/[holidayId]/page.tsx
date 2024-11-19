@@ -1,4 +1,4 @@
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { getHolidayDetail } from '@/lib/get-holiday-detail';
 import { LanguageCode } from '@/i18n';
@@ -30,25 +30,29 @@ export default async function HolidayDetailPage({ params }: HolidayDetailPagePro
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-4">{holiday.name}</h1>
         
-        {/* Countdown Section */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">{t('countdown')}</h2>
-          <ClientCountdown targetDate={holiday.date} title={holiday.name} />
-        </div>
+        {/* Countdown Section - Only show if date is available */}
+        {holiday.date && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">{t('countdown')}</h2>
+            <ClientCountdown targetDate={holiday.date} title={holiday.name} />
+          </div>
+        )}
         
         <div className="space-y-6">
-          {/* Date */}
-          <Card className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <Calendar className="h-6 w-6 text-primary" />
-              <h2 className="text-2xl font-semibold">{t('date')}</h2>
-            </div>
-            <p className="text-lg ml-9">{new Date(holiday.date).toLocaleDateString(locale, { 
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}</p>
-          </Card>
+          {/* Date - Only show if available */}
+          {holiday.date && (
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <Calendar className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-semibold">{t('date')}</h2>
+              </div>
+              <p className="text-lg ml-9">{new Date(holiday.date).toLocaleDateString(locale, { 
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}</p>
+            </Card>
+          )}
 
           {/* Description - Only show if available */}
           {holiday.description && (

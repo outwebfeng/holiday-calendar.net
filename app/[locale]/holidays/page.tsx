@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from 'next-intl/server';
-import { Holiday, getAllHolidays } from '@/lib/get-holidays';
+import { getAllHolidays } from '@/lib/get-holidays';
 import { HolidayList } from '@/components/holidays/holiday-list';
 import { LanguageCode } from '@/i18n';
 

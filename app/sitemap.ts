@@ -36,7 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Generate URLs for each holiday in each language
   const holidayPages = [
     ...enHolidays.map((holiday) => ({
-      url: `${baseUrl}/en/holidays/${holiday.id}`,
+      url: `${baseUrl}/holidays/${holiday.id}`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.7,

@@ -21,5 +21,5 @@ export const getAllHolidays = cache(async (locale: LanguageCode): Promise<Holida
 export const getHolidays = cache(async (locale: LanguageCode): Promise<Holiday[]> => {
   const currentYear = new Date().getFullYear();
   const data = await import(`@/data/holidays-year/holiday-${currentYear}-${locale}.json`);
-  return data.holidays.filter(holiday => holiday.type === "1" || holiday.type === "2");
+  return data.holidays.filter((holiday: Holiday) => holiday.type === "1" || holiday.type === "2");
 });

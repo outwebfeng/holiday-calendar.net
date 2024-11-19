@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HolidayCard } from './holiday-card';
 import { HolidayFilters } from './holiday-filters';
 import { Pagination } from './pagination';
-import { getAllHolidays } from '@/lib/get-holidays';
+import { Holiday } from '@/lib/get-holidays';
 import { useTranslations } from 'next-intl';
 import { LanguageCode } from '@/i18n';
 
