@@ -1,6 +1,6 @@
 import './globals.css';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@/components/analytics/google-analytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,11 +12,6 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export const metadata: Metadata = {
-  title: 'Holiday Calendar',
-  description: 'A comprehensive holiday information web application',
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} font-sans`}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
