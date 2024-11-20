@@ -109,12 +109,15 @@
     ]
   },
   "holiday": {
-    "countdown": "Holiday Countdown",
+    "countdown": "Countdown",
     "date": "Date",
     "description": "Description",
     "origin": "Origin",
     "guide": "Celebration Guide",
-    "taboos": "Things to Note"
+    "taboos": "Things to Note",
+    "metaTitle": "{name} Countdown, Description, Origin, Celebration Guide, Things to Note",
+    "metaDescription": "Explore {name} with our comprehensive guide. Find countdown timer, historical origins, celebration ideas, customs, and important notes. Plan your perfect holiday celebration with us.",
+    "lastUpdated": "Last Updated"
   },
   "footer": {
     "title": "Holiday Calendar",

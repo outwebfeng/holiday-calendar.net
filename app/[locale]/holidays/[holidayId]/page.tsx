@@ -20,8 +20,11 @@ export async function generateMetadata({ params }: HolidayDetailPageProps): Prom
   const locale = params.locale as LanguageCode;
   unstable_setRequestLocale(locale);
   const t = await getTranslations('holiday');
+  
+  // Fetch holiday detail data
   const holiday = await getHolidayDetail(params.holidayId, locale);
-
+  
+  // If holiday not found, return 404
   if (!holiday) {
     return {};
   }
@@ -40,8 +43,8 @@ export async function generateMetadata({ params }: HolidayDetailPageProps): Prom
   }, {});
 
   return {
-    title: holiday.name,
-    description: holiday.description?.split('\n')[0] || '',
+    title: t('metaTitle', { name: holiday.name }),
+    description: t('metaDescription', { name: holiday.name }),
     alternates: {
       canonical: canonicalUrl,
       languages,
