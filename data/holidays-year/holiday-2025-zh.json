@@ -1,0 +1,1922 @@
+{
+  "holidays": [
+    {
+        "id": "new-years-day",
+        "name": "元旦",
+        "date": "2025-01-01",
+        "dayOfWeek": "星期三",
+        "type": "1"
+    },
+    {
+        "id": "last-day-of-chanukah",
+        "name": "哈努卡最后一天",
+        "date": "2025-01-02",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "world-braille-day",
+        "name": "世界盲人日",
+        "date": "2025-01-04",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "epiphany",
+        "name": "显现节",
+        "date": "2025-01-06",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "orthodox-christmas-day",
+        "name": "东正教圣诞节",
+        "date": "2025-01-07",
+        "dayOfWeek": "星期二",
+        "type": "3"
+    },
+    {
+        "id": "international-programmers-day",
+        "name": "国际程序员日",
+        "date": "2025-01-07",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "estelle-reel-day",
+        "name": "Estelle Reel Day",
+        "date": "2025-01-07",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "battle-of-new-orleans",
+        "name": "新奥尔良战役",
+        "date": "2025-01-08",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "asarah-btevet",
+        "name": "亚萨拉·贝特维特节",
+        "date": "2025-01-10",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "stephen-foster-memorial-day",
+        "name": "斯蒂芬·福斯特纪念日",
+        "date": "2025-01-13",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "orthodox-new-year",
+        "name": "东正教新年",
+        "date": "2025-01-14",
+        "dayOfWeek": "星期二",
+        "type": "3"
+    },
+    {
+        "id": "world-religion-day",
+        "name": "世界宗教日",
+        "date": "2025-01-19",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "robert-e-lee-birthday",
+        "name": "罗伯特·E·李生日",
+        "date": "2025-01-19",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "state-holiday",
+        "name": "州假日",
+        "date": "2025-01-19",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "confederate-heroes-day",
+        "name": "南方联盟英雄日",
+        "date": "2025-01-19",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "martin-luther-king-jr-day",
+        "name": "马丁·路德·金纪念日",
+        "date": "2025-01-20",
+        "dayOfWeek": "星期一",
+        "type": "1"
+    },
+    {
+        "id": "idaho-human-rights-day",
+        "name": "爱达荷州人权日",
+        "date": "2025-01-20",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "civil-rights-day",
+        "name": "民权日",
+        "date": "2025-01-20",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "inauguration-day",
+        "name": "就职日",
+        "date": "2025-01-20",
+        "dayOfWeek": "星期一",
+        "type": "1"
+    },
+    {
+        "id": "international-day-of-education",
+        "name": "国际教育日",
+        "date": "2025-01-24",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "international-customs-day",
+        "name": "国际海关日",
+        "date": "2025-01-26",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "world-leprosy-day",
+        "name": "世界麻风日",
+        "date": "2025-01-26",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "isra-and-miraj",
+        "name": "夜行与登霄（暂定日期）",
+        "date": "2025-01-27",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "holocaust-memorial-day",
+        "name": "国际大屠杀纪念日",
+        "date": "2025-01-27",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "kansas-day",
+        "name": "堪萨斯日",
+        "date": "2025-01-29",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "lunar-new-year",
+        "name": "农历新年",
+        "date": "2025-01-29",
+        "dayOfWeek": "星期三",
+        "type": "3"
+    },
+    {
+        "id": "national-freedom-day",
+        "name": "国家自由日",
+        "date": "2025-02-01",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "first-day-of-black-history-month",
+        "name": "黑人历史月第一天",
+        "date": "2025-02-01",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "world-wetlands-day",
+        "name": "世界湿地日",
+        "date": "2025-02-02",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "groundhog-day",
+        "name": "土拨鼠日",
+        "date": "2025-02-02",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "international-day-of-human-fraternity",
+        "name": "国际人类兄弟情谊日",
+        "date": "2025-02-04",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "world-cancer-day",
+        "name": "世界癌症日",
+        "date": "2025-02-04",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "rosa-parks-day",
+        "name": "罗莎·帕克斯日",
+        "date": "2025-02-04",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "national-girls-and-women-in-sports-day",
+        "name": "全国女孩与女性体育日",
+        "date": "2025-02-05",
+        "dayOfWeek": "星期三",
+        "type": "5"
+    },
+    {
+        "id": "international-zero-tolerance-fgm",
+        "name": "国际反女性生殖器切割零容忍日",
+        "date": "2025-02-06",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "ronald-reagan-day",
+        "name": "罗纳德·里根日",
+        "date": "2025-02-06",
+        "dayOfWeek": "星期四",
+        "type": "6"
+    },
+    {
+        "id": "national-wear-red-day",
+        "name": "全国穿红色日",
+        "date": "2025-02-07",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "super-bowl",
+        "name": "超级碗",
+        "date": "2025-02-09",
+        "dayOfWeek": "星期日",
+        "type": "2"
+    },
+    {
+        "id": "world-pulses-day",
+        "name": "世界豆类日",
+        "date": "2025-02-10",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "international-women-and-girls-science-day",
+        "name": "国际女性与女孩科学日",
+        "date": "2025-02-11",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "world-day-of-the-sick",
+        "name": "世界病人日",
+        "date": "2025-02-11",
+        "dayOfWeek": "星期二",
+        "type": "3"
+    },
+    {
+        "id": "lincolns-birthday",
+        "name": "林肯生日",
+        "date": "2025-02-12",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "georgia-day",
+        "name": "乔治亚州日",
+        "date": "2025-02-12",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "tu-bishvat",
+        "name": "图·比什瓦特",
+        "date": "2025-02-13",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "world-radio-day",
+        "name": "世界广播日",
+        "date": "2025-02-13",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "valentines-day",
+        "name": "情人节",
+        "date": "2025-02-14",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "statehood-day",
+        "name": "建州日",
+        "date": "2025-02-14",
+        "dayOfWeek": "星期五",
+        "type": "6"
+    },
+    {
+        "id": "susan-b-anthony-day",
+        "name": "苏珊·B·安东尼日",
+        "date": "2025-02-15",
+        "dayOfWeek": "星期六",
+        "type": "6"
+    },
+    {
+        "id": "elizabeth-peratrovich-day",
+        "name": "伊丽莎白·佩拉特罗维奇日",
+        "date": "2025-02-16",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "presidents-day",
+        "name": "总统日",
+        "date": "2025-02-17",
+        "dayOfWeek": "星期一",
+        "type": "1"
+    },
+    {
+        "id": "daisy-gatson-bates-day",
+        "name": "黛西·盖特森·贝茨日",
+        "date": "2025-02-17",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "world-day-social-justice",
+        "name": "世界社会正义日",
+        "date": "2025-02-20",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "international-mother-language-day",
+        "name": "国际母语日",
+        "date": "2025-02-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "maha-shivaratri",
+        "name": "摩哈·湿婆夜",
+        "date": "2025-02-25",
+        "dayOfWeek": "星期二",
+        "type": "3"
+    },
+    {
+        "id": "african-american-inventor-day",
+        "name": "非裔美国发明家日",
+        "date": "2025-02-25",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "george-rogers-clark-day",
+        "name": "乔治·罗杰斯·克拉克日",
+        "date": "2025-02-25",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "linus-pauling-day",
+        "name": "莱纳斯·鲍林日",
+        "date": "2025-02-28",
+        "dayOfWeek": "星期五",
+        "type": "6"
+    },
+    {
+        "id": "ramadan-starts",
+        "name": "斋月开始（暂定日期）",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "zero-discrimination-day",
+        "name": "零歧视日",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "self-injury-awareness-day",
+        "name": "自残意识日",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "st-davids-day",
+        "name": "圣大卫日",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "womens-history-month",
+        "name": "妇女历史月第一天",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "irish-american-heritage-month",
+        "name": "爱尔兰裔美国人历史月第一天",
+        "date": "2025-03-01",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "texas-independence-day",
+        "name": "德克萨斯独立日",
+        "date": "2025-03-02",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "wildlife-day",
+        "name": "世界野生动植物日",
+        "date": "2025-03-03",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "pulaski-day",
+        "name": "卡西米尔·普拉斯基日",
+        "date": "2025-03-03",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "read-across-america-day",
+        "name": "美国阅读日",
+        "date": "2025-03-03",
+        "dayOfWeek": "星期一",
+        "type": "5"
+    },
+    {
+        "id": "mardi-gras",
+        "name": "忏悔星期二/狂欢节",
+        "date": "2025-03-04",
+        "dayOfWeek": "星期二",
+        "type": "3"
+    },
+    {
+        "id": "town-meeting-day",
+        "name": "镇会议日",
+        "date": "2025-03-04",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "ash-wednesday",
+        "name": "圣灰星期三",
+        "date": "2025-03-05",
+        "dayOfWeek": "星期三",
+        "type": "3"
+    },
+    {
+        "id": "employee-appreciation-day",
+        "name": "员工感谢日",
+        "date": "2025-03-07",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "international-womens-day",
+        "name": "国际妇女节",
+        "date": "2025-03-08",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "dst-starts",
+        "name": "夏令时开始",
+        "date": "2025-03-09",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "women-judges-day",
+        "name": "国际女性法官日",
+        "date": "2025-03-10",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "kidney-day",
+        "name": "世界肾脏日",
+        "date": "2025-03-13",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "holi",
+        "name": "胡里节",
+        "date": "2025-03-14",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "purim",
+        "name": "普林节",
+        "date": "2025-03-14",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "long-covid-awareness-day",
+        "name": "长期新冠意识日",
+        "date": "2025-03-15",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "st-patricks-day",
+        "name": "圣帕特里克节",
+        "date": "2025-03-17",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "evacuation-day",
+        "name": "撤离日",
+        "date": "2025-03-17",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "french-language-day",
+        "name": "法国语言日",
+        "date": "2025-03-20",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "happiness-day",
+        "name": "国际幸福日",
+        "date": "2025-03-20",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "march-equinox",
+        "name": "春分",
+        "date": "2025-03-20",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "elimination-of-racial-discrimination-day",
+        "name": "国际消除种族歧视日",
+        "date": "2025-03-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "poetry-day",
+        "name": "世界诗歌日",
+        "date": "2025-03-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "nowruz",
+        "name": "国际诺鲁孜节",
+        "date": "2025-03-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "down-syndrome-day",
+        "name": "世界唐氏综合症日",
+        "date": "2025-03-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "forests-day",
+        "name": "国际森林日",
+        "date": "2025-03-21",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "water-day",
+        "name": "世界水日",
+        "date": "2025-03-22",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "meteorological-day",
+        "name": "世界气象日",
+        "date": "2025-03-23",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "tuberculosis-day",
+        "name": "世界结核病日",
+        "date": "2025-03-24",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "truth-rights-day",
+        "name": "国际人权真相与尊严日",
+        "date": "2025-03-24",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "slavery-victims-day",
+        "name": "国际奴隶制受害者纪念日",
+        "date": "2025-03-25",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "solidarity-day",
+        "name": "国际声援被拘留与失踪人员日",
+        "date": "2025-03-25",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "maryland-day",
+        "name": "马里兰州日",
+        "date": "2025-03-25",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "lailat-al-qadr",
+        "name": "奠基之夜",
+        "date": "2025-03-26",
+        "dayOfWeek": "星期三",
+        "type": "3"
+    },
+    {
+        "id": "prince-jonah-kuhio-kalanianaole-day",
+        "name": "乔纳·库赫伊奥·卡拉尼阿诺勒日",
+        "date": "2025-03-26",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "earth-hour",
+        "name": "地球一小时",
+        "date": "2025-03-29",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "vietnam-war-veterans-day",
+        "name": "越南战争老兵日",
+        "date": "2025-03-29",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "wyoming-veterans-welcome-home-day",
+        "name": "怀俄明州退伍军人欢迎回家日",
+        "date": "2025-03-30",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "doctors-day",
+        "name": "医生日",
+        "date": "2025-03-30",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "vietnam-veterans-day",
+        "name": "越南退伍军人日",
+        "date": "2025-03-30",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "eid-al-fitr",
+        "name": "开斋节（暂定日期）",
+        "date": "2025-03-31",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "transgender-visibility-day",
+        "name": "国际跨性别者能见度日",
+        "date": "2025-03-31",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "sewards-day",
+        "name": "苏厄德日",
+        "date": "2025-03-31",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "cesar-chavez-day",
+        "name": "塞萨尔·查韦斯日",
+        "date": "2025-03-31",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "april-fools-day",
+        "name": "愚人节",
+        "date": "2025-04-01",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "world-autism-awareness-day",
+        "name": "世界自闭症意识日",
+        "date": "2025-04-02",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "pascua-florida-day",
+        "name": "佛罗里达复活节日",
+        "date": "2025-04-02",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "mine-awareness-day",
+        "name": "联合国地雷意识日",
+        "date": "2025-04-04",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "day-of-conscience",
+        "name": "国际良知日",
+        "date": "2025-04-05",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "day-of-sport",
+        "name": "国际体育与发展与和平日",
+        "date": "2025-04-06",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "national-tartan-day",
+        "name": "全国苏格兰格子呢日",
+        "date": "2025-04-06",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "world-health-day",
+        "name": "联合国世界卫生日",
+        "date": "2025-04-07",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "rwanda-genocide-remembrance-day",
+        "name": "卢旺达大屠杀受害者纪念日",
+        "date": "2025-04-07",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "library-workers-day",
+        "name": "全国图书馆工作人员日",
+        "date": "2025-04-08",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "passover-eve",
+        "name": "逾越节前夕",
+        "date": "2025-04-12",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "human-space-flight-day",
+        "name": "国际人类航天日",
+        "date": "2025-04-12",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "palm-sunday",
+        "name": "棕枝主日",
+        "date": "2025-04-13",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "passover-first-day",
+        "name": "逾越节（第一天）",
+        "date": "2025-04-13",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "thomas-jeffersons-birthday",
+        "name": "托马斯·杰斐逊生日",
+        "date": "2025-04-13",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "world-chagas-disease-day",
+        "name": "世界查格斯病日",
+        "date": "2025-04-14",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "world-art-day",
+        "name": "世界艺术日",
+        "date": "2025-04-15",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "tax-day",
+        "name": "税务日",
+        "date": "2025-04-15",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "father-damien-day",
+        "name": "达米恩神父日",
+        "date": "2025-04-15",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "emancipation-day",
+        "name": "解放日",
+        "date": "2025-04-16",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "maundy-thursday",
+        "name": "圣周四",
+        "date": "2025-04-17",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "orthodox-good-friday",
+        "name": "东正教耶稣受难日",
+        "date": "2025-04-18",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "day-for-monuments-sites",
+        "name": "国际纪念碑和遗址日",
+        "date": "2025-04-18",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "good-friday",
+        "name": "耶稣受难日",
+        "date": "2025-04-18",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "arbor-day",
+        "name": "植树节",
+        "date": "2025-04-18",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "holy-saturday",
+        "name": "圣星期六",
+        "date": "2025-04-19",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "orthodox-holy-saturday",
+        "name": "东正教圣星期六",
+        "date": "2025-04-19",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "last-day-of-passover",
+        "name": "逾越节最后一天",
+        "date": "2025-04-20",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "orthodox-easter",
+        "name": "东正教复活节",
+        "date": "2025-04-20",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "chinese-language-day",
+        "name": "中文语言日",
+        "date": "2025-04-20",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "easter-sunday",
+        "name": "复活节星期日",
+        "date": "2025-04-20",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "orthodox-easter-monday",
+        "name": "东正教复活节星期一",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "creativity-and-innovation-day",
+        "name": "世界创造力与创新日",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "easter-monday",
+        "name": "复活节星期一",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "patriots-day",
+        "name": "爱国者日",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "san-jacinto-day",
+        "name": "圣哈辛托日",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "boston-marathon",
+        "name": "波士顿马拉松",
+        "date": "2025-04-21",
+        "dayOfWeek": "星期一",
+        "type": "2"
+    },
+    {
+        "id": "earth-day",
+        "name": "地球日",
+        "date": "2025-04-22",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "oklahoma-day",
+        "name": "俄克拉荷马州日",
+        "date": "2025-04-22",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "yom-hashoah",
+        "name": "大屠杀纪念日",
+        "date": "2025-04-23",
+        "dayOfWeek": "星期三",
+        "type": "3"
+    },
+    {
+        "id": "world-book-copyright-day",
+        "name": "世界图书和版权日",
+        "date": "2025-04-23",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "world-spanish-language-day",
+        "name": "世界西班牙语日",
+        "date": "2025-04-23",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "english-language-day",
+        "name": "英语语言日",
+        "date": "2025-04-23",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "administrative-professionals-day",
+        "name": "行政专业人员日",
+        "date": "2025-04-23",
+        "dayOfWeek": "星期三",
+        "type": "5"
+    },
+    {
+        "id": "girls-in-ict-day",
+        "name": "国际女孩信息与通信技术日",
+        "date": "2025-04-24",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "multilateralism-and-peace-day",
+        "name": "国际多边主义与和平日",
+        "date": "2025-04-24",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "take-daughters-sons-to-work-day",
+        "name": "带女儿和儿子去工作日",
+        "date": "2025-04-24",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "international-delegates-day",
+        "name": "国际代表日",
+        "date": "2025-04-25",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "world-malaria-day",
+        "name": "世界疟疾日",
+        "date": "2025-04-25",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "intellectual-property-day",
+        "name": "世界知识产权日",
+        "date": "2025-04-26",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "chernobyl-remembrance-day",
+        "name": "切尔诺贝利灾难纪念日",
+        "date": "2025-04-26",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "confederate-memorial-day",
+        "name": "南方联盟纪念日",
+        "date": "2025-04-26",
+        "dayOfWeek": "星期六",
+        "type": "6"
+    },
+    {
+        "id": "work-safety-health-day",
+        "name": "世界职业安全与健康日",
+        "date": "2025-04-28",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "international-jazz-day",
+        "name": "国际爵士乐日",
+        "date": "2025-04-30",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "yom-haatzmaut",
+        "name": "以色列独立日",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "law-day",
+        "name": "法律日",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "loyalty-day",
+        "name": "忠诚日",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "national-day-of-prayer",
+        "name": "全国祷告日",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "lei-day",
+        "name": "花环节",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "6"
+    },
+    {
+        "id": "wv-day-of-prayer",
+        "name": "西弗吉尼亚祷告日",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "6"
+    },
+    {
+        "id": "military-appreciation-month",
+        "name": "军人感恩月第一天",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "asian-pacific-heritage-month",
+        "name": "亚太裔美国人历史月第一天",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "jewish-heritage-month",
+        "name": "犹太裔美国人历史月第一天",
+        "date": "2025-05-01",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "world-tuna-day",
+        "name": "世界金枪鱼日",
+        "date": "2025-05-02",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "kentucky-oaks",
+        "name": "肯塔基橡树赛",
+        "date": "2025-05-02",
+        "dayOfWeek": "星期五",
+        "type": "2"
+    },
+    {
+        "id": "press-freedom-day",
+        "name": "世界新闻自由日",
+        "date": "2025-05-03",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "kentucky-derby",
+        "name": "肯塔基赛马",
+        "date": "2025-05-03",
+        "dayOfWeek": "星期六",
+        "type": "2"
+    },
+    {
+        "id": "eod-day",
+        "name": "全国爆炸物处置日",
+        "date": "2025-05-03",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "family-equality-day",
+        "name": "国际家庭平等日",
+        "date": "2025-05-04",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "kent-state-remembrance",
+        "name": "肯特州枪击事件纪念日",
+        "date": "2025-05-04",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "rhode-island-independence-day",
+        "name": "罗德岛独立日",
+        "date": "2025-05-04",
+        "dayOfWeek": "星期日",
+        "type": "6"
+    },
+    {
+        "id": "portuguese-language-day",
+        "name": "世界葡萄牙语日",
+        "date": "2025-05-05",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "cinco-de-mayo",
+        "name": "五一节",
+        "date": "2025-05-05",
+        "dayOfWeek": "星期一",
+        "type": "5"
+    },
+    {
+        "id": "nurses-day",
+        "name": "全国护士日",
+        "date": "2025-05-06",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "teacher-appreciation-day",
+        "name": "全国教师感恩日",
+        "date": "2025-05-06",
+        "dayOfWeek": "星期二",
+        "type": "5"
+    },
+    {
+        "id": "ww2-remembrance-day",
+        "name": "第二次世界大战纪念日",
+        "date": "2025-05-08",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "ovarian-cancer-day",
+        "name": "世界卵巢癌日",
+        "date": "2025-05-08",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "red-cross-day",
+        "name": "世界红十字与红新月日",
+        "date": "2025-05-08",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "truman-day",
+        "name": "杜鲁门日",
+        "date": "2025-05-08",
+        "dayOfWeek": "星期四",
+        "type": "6"
+    },
+    {
+        "id": "ve-day",
+        "name": "欧洲胜利日",
+        "date": "2025-05-08",
+        "dayOfWeek": "星期四",
+        "type": "2"
+    },
+    {
+        "id": "confederate-memorial-day-observed",
+        "name": "南方联盟纪念日（观察日）",
+        "date": "2025-05-09",
+        "dayOfWeek": "星期五",
+        "type": "6"
+    },
+    {
+        "id": "native-american-day",
+        "name": "美洲原住民日",
+        "date": "2025-05-09",
+        "dayOfWeek": "星期五",
+        "type": "6"
+    },
+    {
+        "id": "military-spouse-day",
+        "name": "军人配偶感恩日",
+        "date": "2025-05-09",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "migratory-bird-day",
+        "name": "世界候鸟日",
+        "date": "2025-05-10",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "argania-day",
+        "name": "阿尔甘树国际日",
+        "date": "2025-05-10",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "mothers-day",
+        "name": "母亲节",
+        "date": "2025-05-11",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "vesak-day",
+        "name": "卫塞节",
+        "date": "2025-05-12",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "nurses-day-intl",
+        "name": "国际护士日",
+        "date": "2025-05-12",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "day-of-families",
+        "name": "国际家庭日",
+        "date": "2025-05-15",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "peace-officers-memorial-day",
+        "name": "和平警察纪念日",
+        "date": "2025-05-15",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "lag-baomer",
+        "name": "拉格·巴奥梅尔节",
+        "date": "2025-05-16",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "living-together-peace-day",
+        "name": "国际和平共处日",
+        "date": "2025-05-16",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "day-of-light",
+        "name": "国际光明日",
+        "date": "2025-05-16",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "transportation-day",
+        "name": "国防交通日",
+        "date": "2025-05-16",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "telecommunication-day",
+        "name": "世界电信与信息社会日",
+        "date": "2025-05-17",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "public-lands-day",
+        "name": "公共土地日",
+        "date": "2025-05-17",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "armed-forces-day",
+        "name": "武装部队日",
+        "date": "2025-05-17",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "preakness-stakes",
+        "name": "普里克尼斯赛马",
+        "date": "2025-05-17",
+        "dayOfWeek": "星期六",
+        "type": "2"
+    },
+    {
+        "id": "bee-day",
+        "name": "世界蜜蜂日",
+        "date": "2025-05-20",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "arthritis-day",
+        "name": "世界风湿性关节炎日",
+        "date": "2025-05-20",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "diversity-day",
+        "name": "世界文化多样性日",
+        "date": "2025-05-21",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "tea-day",
+        "name": "国际茶日",
+        "date": "2025-05-21",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "ems-day",
+        "name": "儿童急救医疗服务日",
+        "date": "2025-05-21",
+        "dayOfWeek": "星期三",
+        "type": "5"
+    },
+    {
+        "id": "biodiversity-day",
+        "name": "国际生物多样性日",
+        "date": "2025-05-22",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "maritime-day",
+        "name": "国家海事日",
+        "date": "2025-05-22",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "harvey-milk-day",
+        "name": "哈维·米尔克日",
+        "date": "2025-05-22",
+        "dayOfWeek": "星期四",
+        "type": "6"
+    },
+    {
+        "id": "end-fistula-day",
+        "name": "国际消除产科瘘管日",
+        "date": "2025-05-23",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "african-liberation-day",
+        "name": "非洲解放日",
+        "date": "2025-05-25",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "missing-children-day",
+        "name": "全国失踪儿童日",
+        "date": "2025-05-25",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "memorial-day",
+        "name": "阵亡将士纪念日",
+        "date": "2025-05-26",
+        "dayOfWeek": "星期一",
+        "type": "1"
+    },
+    {
+        "id": "decoration-day",
+        "name": "装饰日",
+        "date": "2025-05-26",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "jefferson-davis-birthday",
+        "name": "杰斐逊·戴维斯生日",
+        "date": "2025-05-26",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "ascension-day",
+        "name": "升天节",
+        "date": "2025-05-29",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "peacekeepers-day",
+        "name": "联合国维和人员日",
+        "date": "2025-05-29",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "no-tobacco-day",
+        "name": "世界无烟日",
+        "date": "2025-05-31",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "global-day-of-parents",
+        "name": "全球父母日",
+        "date": "2025-06-01",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "pride-month-start",
+        "name": "骄傲月第一天",
+        "date": "2025-06-01",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "caribbean-heritage-month-start",
+        "name": "加勒比裔美国人历史月第一天",
+        "date": "2025-06-01",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "shavuot",
+        "name": "七七节",
+        "date": "2025-06-02",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "world-bicycle-day",
+        "name": "世界自行车日",
+        "date": "2025-06-03",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "day-of-innocent-children",
+        "name": "国际无辜儿童受害者日",
+        "date": "2025-06-04",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "world-environment-day",
+        "name": "世界环境日",
+        "date": "2025-06-05",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "illegal-fishing-day",
+        "name": "国际反非法、无报告和无管制渔业日",
+        "date": "2025-06-05",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "russian-language-day",
+        "name": "俄语日",
+        "date": "2025-06-06",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "d-day",
+        "name": "诺曼底登陆日",
+        "date": "2025-06-06",
+        "dayOfWeek": "星期五",
+        "type": "2"
+    },
+    {
+        "id": "eid-al-adha",
+        "name": "古尔班节（暂定日期）",
+        "date": "2025-06-07",
+        "dayOfWeek": "星期六",
+        "type": "3"
+    },
+    {
+        "id": "world-food-safety-day",
+        "name": "世界食品安全日",
+        "date": "2025-06-07",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "belmont-stakes",
+        "name": "贝尔蒙特赛马",
+        "date": "2025-06-07",
+        "dayOfWeek": "星期六",
+        "type": "2"
+    },
+    {
+        "id": "pentecost",
+        "name": "五旬节",
+        "date": "2025-06-08",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "world-oceans-day",
+        "name": "世界海洋日",
+        "date": "2025-06-08",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "whit-monday",
+        "name": "圣灵降临节星期一",
+        "date": "2025-06-09",
+        "dayOfWeek": "星期一",
+        "type": "3"
+    },
+    {
+        "id": "kamehameha-day",
+        "name": "卡美哈美哈日",
+        "date": "2025-06-11",
+        "dayOfWeek": "星期三",
+        "type": "6"
+    },
+    {
+        "id": "child-labour-day",
+        "name": "世界反对童工日",
+        "date": "2025-06-12",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "loving-day",
+        "name": "爱之日",
+        "date": "2025-06-12",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "albinism-awareness-day",
+        "name": "国际白化病意识日",
+        "date": "2025-06-13",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "friday-the-13th",
+        "name": "13号星期五",
+        "date": "2025-06-13",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "blood-donor-day",
+        "name": "世界献血者日",
+        "date": "2025-06-14",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "army-birthday",
+        "name": "陆军生日",
+        "date": "2025-06-14",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "flag-day",
+        "name": "国旗日",
+        "date": "2025-06-14",
+        "dayOfWeek": "星期六",
+        "type": "5"
+    },
+    {
+        "id": "trinity-sunday",
+        "name": "三位一体主日",
+        "date": "2025-06-15",
+        "dayOfWeek": "星期日",
+        "type": "3"
+    },
+    {
+        "id": "elder-abuse-awareness-day",
+        "name": "世界老年人虐待意识日",
+        "date": "2025-06-15",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "fathers-day",
+        "name": "父亲节",
+        "date": "2025-06-15",
+        "dayOfWeek": "星期日",
+        "type": "5"
+    },
+    {
+        "id": "family-remittances-day",
+        "name": "国际家庭汇款日",
+        "date": "2025-06-16",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "juneteenth-substitute",
+        "name": "自由日（替代日）",
+        "date": "2025-06-16",
+        "dayOfWeek": "星期一",
+        "type": "6"
+    },
+    {
+        "id": "combat-desertification-day",
+        "name": "国际防治荒漠化日",
+        "date": "2025-06-17",
+        "dayOfWeek": "星期二",
+        "type": "4"
+    },
+    {
+        "id": "bunker-hill-day",
+        "name": "邦克山日",
+        "date": "2025-06-17",
+        "dayOfWeek": "星期二",
+        "type": "6"
+    },
+    {
+        "id": "gastronomy-day",
+        "name": "可持续美食日",
+        "date": "2025-06-18",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "corpus-christi",
+        "name": "基督圣体节",
+        "date": "2025-06-19",
+        "dayOfWeek": "星期四",
+        "type": "3"
+    },
+    {
+        "id": "sexual-violence-day",
+        "name": "国际消除冲突中的性暴力日",
+        "date": "2025-06-19",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "juneteenth",
+        "name": "自由日",
+        "date": "2025-06-19",
+        "dayOfWeek": "星期四",
+        "type": "1"
+    },
+    {
+        "id": "juneteenth-freedom-day",
+        "name": "自由日纪念日",
+        "date": "2025-06-19",
+        "dayOfWeek": "星期四",
+        "type": "5"
+    },
+    {
+        "id": "world-refugee-day",
+        "name": "世界难民日",
+        "date": "2025-06-20",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "wv-day",
+        "name": "西弗吉尼亚日",
+        "date": "2025-06-20",
+        "dayOfWeek": "星期五",
+        "type": "6"
+    },
+    {
+        "id": "american-eagle-day",
+        "name": "美国雄鹰日",
+        "date": "2025-06-20",
+        "dayOfWeek": "星期五",
+        "type": "5"
+    },
+    {
+        "id": "june-solstice",
+        "name": "六月至日",
+        "date": "2025-06-20",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "yoga-day",
+        "name": "国际瑜伽日",
+        "date": "2025-06-21",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "celebration-of-solstice",
+        "name": "国际至日庆祝日",
+        "date": "2025-06-21",
+        "dayOfWeek": "星期六",
+        "type": "4"
+    },
+    {
+        "id": "public-service-day",
+        "name": "公共服务日",
+        "date": "2025-06-23",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "widows-day",
+        "name": "国际寡妇日",
+        "date": "2025-06-23",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "seafarer-day",
+        "name": "海员日",
+        "date": "2025-06-25",
+        "dayOfWeek": "星期三",
+        "type": "4"
+    },
+    {
+        "id": "drug-abuse-day",
+        "name": "国际禁毒日",
+        "date": "2025-06-26",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "torture-support-day",
+        "name": "国际支持酷刑受害者日",
+        "date": "2025-06-26",
+        "dayOfWeek": "星期四",
+        "type": "4"
+    },
+    {
+        "id": "muharram",
+        "name": "穆哈兰月（暂定日期）",
+        "date": "2025-06-27",
+        "dayOfWeek": "星期五",
+        "type": "3"
+    },
+    {
+        "id": "sme-day",
+        "name": "中小企业日",
+        "date": "2025-06-27",
+        "dayOfWeek": "星期五",
+        "type": "4"
+    },
+    {
+        "id": "carolina-day",
+        "name": "卡罗来纳日",
+        "date": "2025-06-28",
+        "dayOfWeek": "星期六",
+        "type": "6"
+    },
+    {
+        "id": "tropics-day",
+        "name": "热带日",
+        "date": "2025-06-29",
+        "dayOfWeek": "星期日",
+        "type": "4"
+    },
+    {
+        "id": "asteroid-day",
+        "name": "国际小行星日",
+        "date": "2025-06-30",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    },
+    {
+        "id": "parliamentarism-day",
+        "name": "国际议会日",
+        "date": "2025-06-30",
+        "dayOfWeek": "星期一",
+        "type": "4"
+    }
+  ]
+}

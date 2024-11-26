@@ -22,56 +22,85 @@ export interface HolidayDetail {
  */
 export async function getHolidayDetail(holidayId: string, locale: LanguageCode): Promise<HolidayDetail | null> {
   try {
-    // 获取当前年份
-    const currentYear = new Date().getFullYear();
+    // Get current date and years
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const nextYear = currentYear + 1;
     
-    // 构建文件路径
+    // Build file paths
     const detailPath = path.join(process.cwd(), 'data', 'holidays', `${locale}.json`);
-    const yearPath = path.join(process.cwd(), 'data', 'holidays-year', `holiday-${currentYear}-${locale}.json`);
-    
-    // 读取年度数据
-    const yearContent = await fs.readFile(yearPath, 'utf8').catch(error => {
-      console.warn(`Warning: Could not find holiday data for year ${currentYear}, falling back to previous year`);
-      // 如果当前年份的数据不存在，尝试使用上一年的数据
-      const previousYear = currentYear - 1;
-      const fallbackPath = path.join(process.cwd(), 'data', 'holidays-year', `holiday-${previousYear}-${locale}.json`);
-      return fs.readFile(fallbackPath, 'utf8');
-    });
+    const currentYearPath = path.join(process.cwd(), 'data', 'holidays-year', `holiday-${currentYear}-${locale}.json`);
+    const nextYearPath = path.join(process.cwd(), 'data', 'holidays-year', `holiday-${nextYear}-${locale}.json`);
 
-    const yearData = JSON.parse(yearContent);
-    
-    // 从年度数据中查找基本信息
-    const yearHoliday = yearData.holidays.find((h: { id: string; name: string; date: string; dayOfWeek: string; type: string }) => h.id === holidayId);
-    if (!yearHoliday) return null;
-
+    // Try to get the year-specific data first
+    let yearHoliday = null;
     try {
-      // 尝试读取详细信息
-      const detailContent = await fs.readFile(detailPath, 'utf8');
-      const detailData = JSON.parse(detailContent);
-      const holidayDetail = detailData.holidays.find((h: HolidayDetail) => h.id === holidayId);
+      // Try current year first
+      const currentYearContent = await fs.readFile(currentYearPath, 'utf8');
+      const currentYearData = JSON.parse(currentYearContent);
+      const currentYearHoliday = currentYearData.holidays.find(
+        (h: { id: string; date: string }) => h.id === holidayId
+      );
 
-      // 如果找到详细信息，合并数据
-      if (holidayDetail) {
-        return {
-          ...holidayDetail,
-          date: yearHoliday.date,
-          dayOfWeek: yearHoliday.dayOfWeek,
-          type: yearHoliday.type
-        };
+      // Try next year if needed
+      const nextYearContent = await fs.readFile(nextYearPath, 'utf8');
+      const nextYearData = JSON.parse(nextYearContent);
+      const nextYearHoliday = nextYearData.holidays.find(
+        (h: { id: string; date: string }) => h.id === holidayId
+      );
+
+      // Determine which year's data to use based on date
+      if (currentYearHoliday && nextYearHoliday) {
+        const currentDate = new Date(currentYearHoliday.date);
+        yearHoliday = currentDate >= today ? currentYearHoliday : nextYearHoliday;
+      } else {
+        yearHoliday = currentYearHoliday || nextYearHoliday;
       }
     } catch (error) {
-      console.warn('Warning: Could not load holiday details, falling back to basic info');
+      console.warn('Warning: Could not load year-specific holiday data');
     }
 
-    // 如果没有找到详细信息或读取失败，返回基本信息
-    return {
-      id: yearHoliday.id,
-      name: yearHoliday.name,
-      date: yearHoliday.date,
-      dayOfWeek: yearHoliday.dayOfWeek,
-      type: yearHoliday.type
-    };
+    // If we found year-specific data, use it as the base
+    if (yearHoliday) {
+      let baseHolidayDetail: HolidayDetail = {
+        id: yearHoliday.id,
+        name: yearHoliday.name,
+        date: yearHoliday.date,
+        dayOfWeek: yearHoliday.dayOfWeek,
+        type: yearHoliday.type
+      };
 
+      // Try to get additional details if available
+      try {
+        const detailContent = await fs.readFile(detailPath, 'utf8');
+        const detailData = JSON.parse(detailContent);
+        const additionalDetails = detailData.holidays.find((h: HolidayDetail) => h.id === holidayId);
+        
+        if (additionalDetails) {
+          baseHolidayDetail = {
+            ...additionalDetails,
+            date: yearHoliday.date,
+            dayOfWeek: yearHoliday.dayOfWeek,
+            type: yearHoliday.type
+          };
+        }
+      } catch (error) {
+        console.warn('Warning: Could not load additional holiday details');
+      }
+
+      return baseHolidayDetail;
+    }
+
+    // If no year-specific data found, try to get base holiday details
+    try {
+      const detailContent = await fs.readFile(detailPath, 'utf8');
+      const detailData = JSON.parse(detailContent);
+      const baseHolidayDetail = detailData.holidays.find((h: HolidayDetail) => h.id === holidayId);
+      return baseHolidayDetail || null;
+    } catch (error) {
+      console.warn('Warning: Could not load base holiday details');
+      return null;
+    }
   } catch (error) {
     console.error('Error fetching holiday detail:', error);
     return null;
