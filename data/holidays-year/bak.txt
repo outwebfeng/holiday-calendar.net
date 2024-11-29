@@ -1,4 +1,9 @@
-
+U.S. Federal Holiday   -- 1
+Major U.S. Holiday     -- 2
+Cultural/Religious Holiday   -- 3
+Global Holiday   -- 4
+National Holiday in the U.S.   -- 5
+State-Level Holiday in the U.S.  -- 6
 
 {
     "holidays": [
