@@ -26,7 +26,7 @@ export function Analytics() {
       <Script
         strategy="afterInteractive"
         data-domain="holidaycalendar.net"
-        src="https://www.perpetualcalendar.top/js/script.js"
+        src="https://www.trafficstatistics.top/js/script.js"
       />
     </>
   );
